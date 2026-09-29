@@ -339,22 +339,22 @@ export const SystemsArchitectureSection: React.FC = () => {
                           Strategy &amp; Advisory
                         </span>
                       </div>
-                      <h3 className="font-serif text-[29px] font-bold text-[#1C1917] tracking-tight leading-[1.12] mb-3" style={{ fontSize: '29px' }}>
+                      <h3 className="font-serif text-[20px] font-bold text-[#1C1917] tracking-tight leading-[1.2] mb-3" style={{ fontSize: '20px' }}>
                         Policy, Economics &amp; Strategy Advisory
                       </h3>
 
                       <div className="mt-4 pt-4 border-t border-[#D5C8BC]/60">
-                        <div className="text-[10px] font-mono uppercase tracking-wider text-[#1C1917] font-semibold mb-3">
+                        <div className="text-[18px] font-mono uppercase tracking-wider text-[#1C1917] font-semibold mb-3" style={{ fontSize: '18px' }}>
                           Key Deliverables
                         </div>
-                        <ul className="space-y-2.5 text-xs sm:text-sm text-[#1C1917] leading-relaxed">
+                        <ul className="space-y-2.5 text-[17px] text-[#1C1917] leading-relaxed" style={{ fontSize: '17px' }}>
                           <li className="flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-1.5 shrink-0" />
-                            <span>Diagnostics, modeling, political-economy analysis, and regulatory reviews</span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-2 shrink-0" />
+                            <span style={{ fontSize: '17px' }}>Diagnostics, modeling, political-economy analysis, and regulatory reviews</span>
                           </li>
                           <li className="flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-1.5 shrink-0" />
-                            <span>Actionable policy papers with <span className="underline decoration-[#D5C8BC] underline-offset-4 font-medium">measurable implementation metrics</span></span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-2 shrink-0" />
+                            <span style={{ fontSize: '17px' }}>Actionable policy papers with <span className="underline decoration-[#D5C8BC] underline-offset-4 font-medium">measurable implementation metrics</span></span>
                           </li>
                         </ul>
                       </div>
@@ -437,22 +437,22 @@ export const SystemsArchitectureSection: React.FC = () => {
                           Design &amp; Structuring
                         </span>
                       </div>
-                      <h3 className="font-serif text-[29px] font-bold text-[#1C1917] tracking-tight leading-[1.12] mb-3" style={{ fontSize: '29px' }}>
+                      <h3 className="font-serif text-[20px] font-bold text-[#1C1917] tracking-tight leading-[1.2] mb-3" style={{ fontSize: '20px' }}>
                         Program Design &amp; Facility Structuring
                       </h3>
 
                       <div className="mt-4 pt-4 border-t border-[#D5C8BC]/60">
-                        <div className="text-[10px] font-mono uppercase tracking-wider text-[#1C1917] font-semibold mb-3">
+                        <div className="text-[18px] font-mono uppercase tracking-wider text-[#1C1917] font-semibold mb-3" style={{ fontSize: '18px' }}>
                           Key Deliverables
                         </div>
-                        <ul className="space-y-2.5 text-xs sm:text-sm text-[#1C1917] leading-relaxed">
+                        <ul className="space-y-2.5 text-[17px] text-[#1C1917] leading-relaxed" style={{ fontSize: '17px' }}>
                           <li className="flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-1.5 shrink-0" />
-                            <span>Feasibility studies, theories of change, concept notes, and results frameworks</span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-2 shrink-0" />
+                            <span style={{ fontSize: '17px' }}>Feasibility studies, theories of change, concept notes, and results frameworks</span>
                           </li>
                           <li className="flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-1.5 shrink-0" />
-                            <span><span className="underline decoration-[#D5C8BC] underline-offset-4 font-medium">Implementation</span> and financing plans, risk registers, and project-preparation support</span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-2 shrink-0" />
+                            <span style={{ fontSize: '17px' }}><span className="underline decoration-[#D5C8BC] underline-offset-4 font-medium">Implementation</span> and financing plans, risk registers, and project-preparation support</span>
                           </li>
                         </ul>
                       </div>
@@ -535,22 +535,22 @@ export const SystemsArchitectureSection: React.FC = () => {
                           Capital Mobilization
                         </span>
                       </div>
-                      <h3 className="font-serif text-[29px] font-bold text-[#1C1917] tracking-tight leading-[1.12] mb-3" style={{ fontSize: '29px' }}>
+                      <h3 className="font-serif text-[20px] font-bold text-[#1C1917] tracking-tight leading-[1.2] mb-3" style={{ fontSize: '20px' }}>
                         Development Finance &amp; Private Capital Mobilization
                       </h3>
 
                       <div className="mt-4 pt-4 border-t border-[#D5C8BC]/60">
-                        <div className="text-[10px] font-mono uppercase tracking-wider text-[#1C1917] font-semibold mb-3">
+                        <div className="text-[18px] font-mono uppercase tracking-wider text-[#1C1917] font-semibold mb-3" style={{ fontSize: '18px' }}>
                           Key Deliverables
                         </div>
-                        <ul className="space-y-2.5 text-xs sm:text-sm text-[#1C1917] leading-relaxed">
+                        <ul className="space-y-2.5 text-[17px] text-[#1C1917] leading-relaxed" style={{ fontSize: '17px' }}>
                           <li className="flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-1.5 shrink-0" />
-                            <span>Investment cases, blended-finance strategies, PPP advisory, and financial models</span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-2 shrink-0" />
+                            <span style={{ fontSize: '17px' }}>Investment cases, blended-finance strategies, PPP advisory, and financial models</span>
                           </li>
                           <li className="flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-1.5 shrink-0" />
-                            <span>Bankability assessments, climate-finance pipelines, and <span className="underline decoration-[#D5C8BC] underline-offset-4 font-medium">risk mitigation structures</span></span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-2 shrink-0" />
+                            <span style={{ fontSize: '17px' }}>Bankability assessments, climate-finance pipelines, and <span className="underline decoration-[#D5C8BC] underline-offset-4 font-medium">risk mitigation structures</span></span>
                           </li>
                         </ul>
                       </div>
@@ -633,22 +633,22 @@ export const SystemsArchitectureSection: React.FC = () => {
                           Governance &amp; Delivery
                         </span>
                       </div>
-                      <h3 className="font-serif text-[29px] font-bold text-[#1C1917] tracking-tight leading-[1.12] mb-3" style={{ fontSize: '29px' }}>
+                      <h3 className="font-serif text-[20px] font-bold text-[#1C1917] tracking-tight leading-[1.2] mb-3" style={{ fontSize: '20px' }}>
                         Institutions, Governance &amp; Delivery
                       </h3>
 
                       <div className="mt-4 pt-4 border-t border-[#D5C8BC]/60">
-                        <div className="text-[10px] font-mono uppercase tracking-wider text-[#1C1917] font-semibold mb-3">
+                        <div className="text-[18px] font-mono uppercase tracking-wider text-[#1C1917] font-semibold mb-3" style={{ fontSize: '18px' }}>
                           Key Deliverables
                         </div>
-                        <ul className="space-y-2.5 text-xs sm:text-sm text-[#1C1917] leading-relaxed">
+                        <ul className="space-y-2.5 text-[17px] text-[#1C1917] leading-relaxed" style={{ fontSize: '17px' }}>
                           <li className="flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-1.5 shrink-0" />
-                            <span>Institutional diagnostics, governance frameworks, and PFM reform</span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-2 shrink-0" />
+                            <span style={{ fontSize: '17px' }}>Institutional diagnostics, governance frameworks, and PFM reform</span>
                           </li>
                           <li className="flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-1.5 shrink-0" />
-                            <span>Delivery models, process redesign, and sustained <span className="underline decoration-[#D5C8BC] underline-offset-4 font-medium">implementation capacity building</span></span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-2 shrink-0" />
+                            <span style={{ fontSize: '17px' }}>Delivery models, process redesign, and sustained <span className="underline decoration-[#D5C8BC] underline-offset-4 font-medium">implementation capacity building</span></span>
                           </li>
                         </ul>
                       </div>
@@ -731,22 +731,22 @@ export const SystemsArchitectureSection: React.FC = () => {
                           MEL &amp; Impact
                         </span>
                       </div>
-                      <h3 className="font-serif text-[29px] font-bold text-[#1C1917] tracking-tight leading-[1.12] mb-3" style={{ fontSize: '29px' }}>
+                      <h3 className="font-serif text-[20px] font-bold text-[#1C1917] tracking-tight leading-[1.2] mb-3" style={{ fontSize: '20px' }}>
                         Monitoring, Evaluation, Learning &amp; Impact
                       </h3>
 
                       <div className="mt-4 pt-4 border-t border-[#D5C8BC]/60">
-                        <div className="text-[10px] font-mono uppercase tracking-wider text-[#1C1917] font-semibold mb-3">
+                        <div className="text-[18px] font-mono uppercase tracking-wider text-[#1C1917] font-semibold mb-3" style={{ fontSize: '18px' }}>
                           Key Deliverables
                         </div>
-                        <ul className="space-y-2.5 text-xs sm:text-sm text-[#1C1917] leading-relaxed">
+                        <ul className="space-y-2.5 text-[17px] text-[#1C1917] leading-relaxed" style={{ fontSize: '17px' }}>
                           <li className="flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-1.5 shrink-0" />
-                            <span>MEL frameworks, baselines, process and impact evaluations, and learning agendas</span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-2 shrink-0" />
+                            <span style={{ fontSize: '17px' }}>MEL frameworks, baselines, process and impact evaluations, and learning agendas</span>
                           </li>
                           <li className="flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-1.5 shrink-0" />
-                            <span>Outcome harvesting, real-time dashboards, and <span className="underline decoration-[#D5C8BC] underline-offset-4 font-medium">adaptive management loops</span></span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-2 shrink-0" />
+                            <span style={{ fontSize: '17px' }}>Outcome harvesting, real-time dashboards, and <span className="underline decoration-[#D5C8BC] underline-offset-4 font-medium">adaptive management loops</span></span>
                           </li>
                         </ul>
                       </div>
@@ -829,22 +829,22 @@ export const SystemsArchitectureSection: React.FC = () => {
                           Data &amp; Responsible AI
                         </span>
                       </div>
-                      <h3 className="font-serif text-[29px] font-bold text-[#1C1917] tracking-tight leading-[1.12] mb-3" style={{ fontSize: '29px' }}>
+                      <h3 className="font-serif text-[20px] font-bold text-[#1C1917] tracking-tight leading-[1.2] mb-3" style={{ fontSize: '20px' }}>
                         Data, Digital &amp; Responsible AI
                       </h3>
 
                       <div className="mt-4 pt-4 border-t border-[#D5C8BC]/60">
-                        <div className="text-[10px] font-mono uppercase tracking-wider text-[#1C1917] font-semibold mb-3">
+                        <div className="text-[18px] font-mono uppercase tracking-wider text-[#1C1917] font-semibold mb-3" style={{ fontSize: '18px' }}>
                           Key Deliverables
                         </div>
-                        <ul className="space-y-2.5 text-xs sm:text-sm text-[#1C1917] leading-relaxed">
+                        <ul className="space-y-2.5 text-[17px] text-[#1C1917] leading-relaxed" style={{ fontSize: '17px' }}>
                           <li className="flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-1.5 shrink-0" />
-                            <span>DPI diagnostics, digital-government strategies, and data governance frameworks</span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-2 shrink-0" />
+                            <span style={{ fontSize: '17px' }}>DPI diagnostics, digital-government strategies, and data governance frameworks</span>
                           </li>
                           <li className="flex items-start gap-2">
-                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-1.5 shrink-0" />
-                            <span>Interoperability standards, AI readiness, and <span className="underline decoration-[#D5C8BC] underline-offset-4 font-medium">responsible service deployment</span></span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#8B3A2A] mt-2 shrink-0" />
+                            <span style={{ fontSize: '17px' }}>Interoperability standards, AI readiness, and <span className="underline decoration-[#D5C8BC] underline-offset-4 font-medium">responsible service deployment</span></span>
                           </li>
                         </ul>
                       </div>

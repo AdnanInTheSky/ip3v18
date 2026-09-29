@@ -4,7 +4,6 @@ import { useCMS } from '../context/CMSContext';
 import { defaultStoryThemes } from '../data/defaultContent';
 import type { StoryTheme } from '../types';
 import { EightSystemsSection } from './EightSystemsSection';
-import { DeliveryCyclePipelineSection } from './DeliveryCyclePipelineSection';
 import { MethodologyTranslationSection } from './MethodologyTranslationSection';
 import { ProjectsSection } from './ProjectsSection';
 import { FourFrontsSection } from './FourFrontsSection';
@@ -317,11 +316,6 @@ export const PolySolutionsSection: React.FC<PolySolutionsSectionProps> = ({
                       data-theme-index={idx}
                       className="theme-horizon-block w-full flex flex-col space-y-6 sm:space-y-8 pt-2 pb-14 sm:pb-20 border-b border-slate-800/60 last:border-b-0"
                     >
-                  {/* Delivery Cycle Pipeline Flow placed before eyebrow of Horizon 2 */}
-                  {idx === 1 && (
-                    <DeliveryCyclePipelineSection className="mt-0 pt-0 mb-4" />
-                  )}
-
                   {/* Horizon Header */}
                   {idx === 1 ? (
                     <div
