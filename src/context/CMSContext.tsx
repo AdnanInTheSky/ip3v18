@@ -95,22 +95,68 @@ interface CMSProviderProps {
   readOnly?: boolean;
 }
 
+const getStoredContent = (): WebsiteData => {
+  if (typeof window !== 'undefined') {
+    try {
+      const raw = localStorage.getItem('ip3_site_content_permanent');
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (parsed && typeof parsed === 'object') {
+          return {
+            ...DEFAULT_WEBSITE_DATA,
+            ...parsed,
+            eightSystems: {
+              ...defaultEightSystemsConfig,
+              ...(parsed.eightSystems || {}),
+            },
+          };
+        }
+      }
+    } catch (e) {
+      console.warn('[CMSContext] Failed reading cached content:', e);
+    }
+  }
+  return DEFAULT_WEBSITE_DATA;
+};
+
 export const CMSProvider: React.FC<CMSProviderProps> = ({ children, readOnly = false }) => {
   /**
-   * Hardcoded default content is the definitive source of truth on load.
-   * No localStorage synchronization is used.
+   * Cached persistent content is loaded on mount, then reconciled with server.
    */
-  const [data, setData] = useState<WebsiteData>(DEFAULT_WEBSITE_DATA);
+  const [data, setData] = useState<WebsiteData>(getStoredContent);
 
   const [themeMode, setThemeModeState] = useState<'dark'>('dark');
 
-  // One-time cleanup of any legacy localStorage keys
+  // Immediately mirror any state change to localStorage
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined' && data) {
       try {
-        localStorage.removeItem('ip3_site_content_permanent');
-      } catch {}
+        localStorage.setItem('ip3_site_content_permanent', JSON.stringify(data));
+      } catch (err) {
+        console.warn('[CMSContext] Failed saving to localStorage:', err);
+      }
     }
+  }, [data]);
+
+  // Flush data to localStorage and server before page unloads
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      if (typeof window !== 'undefined' && latestDataRef.current) {
+        try {
+          localStorage.setItem('ip3_site_content_permanent', JSON.stringify(latestDataRef.current));
+        } catch {}
+        try {
+          fetch('/api/content', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ data: latestDataRef.current }),
+            keepalive: true,
+          }).catch(() => {});
+        } catch {}
+      }
+    };
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => window.removeEventListener('beforeunload', handleBeforeUnload);
   }, []);
 
   // ------------------------------ backend sync ------------------------------
@@ -235,21 +281,71 @@ export const CMSProvider: React.FC<CMSProviderProps> = ({ children, readOnly = f
     const res = await loadContent();
 
     if (res.data) {
-      const merged = {
+      const merged: WebsiteData = {
         ...DEFAULT_WEBSITE_DATA,
         ...(res.data as Partial<WebsiteData>),
+        eightSystems: {
+          ...defaultEightSystemsConfig,
+          ...((res.data as any).eightSystems || {}),
+        },
       };
       if (merged.navigation) {
         merged.navigation = sanitizeNav(merged.navigation);
       }
       setData(merged);
+      if (typeof window !== 'undefined') {
+        try {
+          localStorage.setItem('ip3_site_content_permanent', JSON.stringify(merged));
+        } catch {}
+      }
       setContentVersion(res.version ?? null);
       setLastSyncedAt(res.updatedAt || new Date().toISOString());
       setSyncStatus('saved');
     } else if (res.error) {
+      // Offline fallback: keep local stored data if present
+      if (typeof window !== 'undefined') {
+        const raw = localStorage.getItem('ip3_site_content_permanent');
+        if (raw) {
+          try {
+            const parsed = JSON.parse(raw);
+            if (parsed && typeof parsed === 'object') {
+              setData((prev) => ({
+                ...DEFAULT_WEBSITE_DATA,
+                ...prev,
+                ...parsed,
+                eightSystems: {
+                  ...defaultEightSystemsConfig,
+                  ...(parsed.eightSystems || {}),
+                },
+              }));
+            }
+          } catch {}
+        }
+      }
       setSyncStatus('offline');
       setSyncError(res.error);
     } else {
+      // Server returned empty/null (not initialized yet): check if we have local changes to seed/persist
+      if (typeof window !== 'undefined') {
+        const raw = localStorage.getItem('ip3_site_content_permanent');
+        if (raw) {
+          try {
+            const parsed = JSON.parse(raw);
+            if (parsed && typeof parsed === 'object') {
+              const localMerged: WebsiteData = {
+                ...DEFAULT_WEBSITE_DATA,
+                ...parsed,
+                eightSystems: {
+                  ...defaultEightSystemsConfig,
+                  ...(parsed.eightSystems || {}),
+                },
+              };
+              setData(localMerged);
+              void pushToServer(localMerged);
+            }
+          } catch {}
+        }
+      }
       setSyncStatus('idle');
       setContentVersion(0);
     }
