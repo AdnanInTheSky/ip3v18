@@ -252,10 +252,10 @@ export const SystemsArchitectureSection: React.FC = () => {
                 className="font-serif font-normal text-[#1C1917] tracking-[-0.03em] py-1 overflow-visible w-full text-left max-w-full leading-[1.08] sm:leading-[1.05]"
                 style={{ fontSize: 'clamp(2rem, 3.8vw, 3.75rem)' }}
               >
-                <span className="block whitespace-nowrap text-[#1C1917]">
+                <span className="block whitespace-normal sm:whitespace-nowrap text-[#1C1917]">
                   What clients hire IP3
                 </span>
-                <span className="block italic whitespace-nowrap text-[#1C1917]">
+                <span className="block italic whitespace-normal sm:whitespace-nowrap text-[#1C1917]">
                   to <span className="text-[#8B3A2A]">deliver.</span>
                 </span>
               </motion.h2>

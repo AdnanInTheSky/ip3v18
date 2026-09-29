@@ -691,9 +691,6 @@ export const AboutPage: React.FC<AboutPageProps> = ({
             <p className="hero__sub reveal" data-d="2">
               We understand interconnected complexity, translate intelligence into actionable architecture, and work alongside institutions to carry solutions from policy vision through <span className="accent-word text-[#8B3A2A] font-semibold">implementation</span>, learning and scale.
             </p>
-            <div className="hero__cue reveal" data-d="3">
-              <span /> Scroll the journey
-            </div>
           </div>
         </section>
 

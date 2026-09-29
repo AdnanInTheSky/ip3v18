@@ -36,30 +36,38 @@ export const OrbitalSystemCloneSection: React.FC<OrbitalSystemCloneSectionProps>
           <div>
             {/* Eyebrow */}
             <motion.div
-              initial={{ opacity: 0, y: 8 }}
+              initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="mb-4 sm:mb-6"
+              transition={{ duration: 0.6 }}
+              className="mb-4 sm:mb-6 flex items-center gap-2"
             >
-              <span className="font-mono text-xs sm:text-[13px] font-semibold tracking-[0.2em] text-[#C25337] uppercase">
+              <span className="font-mono text-[11px] sm:text-xs font-semibold tracking-[0.22em] text-[#1C1917] uppercase">
                 {whyIp3.badge || '02 — WHY IP³'}
               </span>
             </motion.div>
 
             {/* Main Headline */}
             <motion.h2
-              initial={{ opacity: 0, y: 12 }}
+              initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-serif text-3xl sm:text-4xl lg:text-[44px] xl:text-[50px] leading-[1.08] tracking-[-0.02em] font-normal text-[#1C1917] mb-12 sm:mb-16"
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="font-serif font-normal text-[#1C1917] tracking-[-0.03em] py-1 overflow-visible w-full text-left max-w-full leading-[1.08] sm:leading-[1.05] mb-10 sm:mb-14"
+              style={{ fontSize: 'clamp(2rem, 3.8vw, 3.75rem)' }}
             >
-              <span className="font-bold uppercase tracking-tight">
-                {whyIp3.titlePrefix || 'FOUR REASONS CLIENTS'}{' '}
+              <span className="block whitespace-normal sm:whitespace-nowrap text-[#1C1917]">
+                {whyIp3.titlePrefix === 'FOUR REASONS CLIENTS' || !whyIp3.titlePrefix
+                  ? 'Four reasons clients'
+                  : whyIp3.titlePrefix}
               </span>
-              <span className="italic font-normal text-[#C25337] lowercase">
-                {whyIp3.titleHighlight || 'choose us'}
+              <span className="block italic whitespace-normal sm:whitespace-nowrap text-[#1C1917]">
+                choose{' '}
+                <span className="text-[#8B3A2A]">
+                  {whyIp3.titleHighlight === 'choose us' || !whyIp3.titleHighlight
+                    ? 'us.'
+                    : whyIp3.titleHighlight}
+                </span>
               </span>
             </motion.h2>
 
