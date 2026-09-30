@@ -254,20 +254,36 @@ export const EightSystemsHero: React.FC<EightSystemsHeroProps> = ({
             >
               <div className="w-full text-left text-start">
                 <h1
-                  style={{ fontSize: 'clamp(2.4rem, 4vw, 56px)', textAlign: 'start' }}
-                  className={`${getFontClass()} leading-[1.08] sm:leading-[1.02] tracking-[-0.03em] font-normal text-slate-900 text-left text-start`}
+                  style={{
+                    fontSize: 'clamp(2.4rem, 4vw, 56px)',
+                    textAlign: 'start',
+                    fontFamily: "'Newsreader', Georgia, serif",
+                  }}
+                  className="font-serif-newsreader leading-[1.08] sm:leading-[1.02] tracking-[-0.03em] font-normal text-slate-900 text-left text-start"
                 >
                   <span
                     className="block text-left text-start text-slate-900"
-                    style={{ fontSize: 'inherit', textAlign: 'start', lineHeight: 'inherit' }}
+                    style={{
+                      fontSize: 'inherit',
+                      textAlign: 'start',
+                      lineHeight: 'inherit',
+                      fontFamily: "'Newsreader', Georgia, serif",
+                      color: '#0f172a',
+                    }}
                   >
-                    {titleMain || 'Operationalized Across '}
+                    Operationalized Across{' '}
                   </span>
                   <span
                     className="block text-slate-500 text-left text-start"
-                    style={{ fontSize: 'inherit', textAlign: 'start', lineHeight: 'inherit' }}
+                    style={{
+                      fontSize: 'inherit',
+                      textAlign: 'start',
+                      lineHeight: 'inherit',
+                      fontFamily: "'Newsreader', Georgia, serif",
+                      color: '#64748b',
+                    }}
                   >
-                    {titleHighlight || '8 Interconnected Realities.'}
+                    8 Interconnected Realities.
                   </span>
                 </h1>
               </div>
