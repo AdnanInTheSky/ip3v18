@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { ChevronRight } from 'lucide-react';
+import { PodcastFlowCarousel } from './PodcastFlowCarousel';
+import { useCMS, defaultPodcastCarousel } from '../context/CMSContext';
 
 export interface ApproachPageProps {
   initialSection?: string;
@@ -1003,6 +1005,9 @@ export const ApproachPage: React.FC<ApproachPageProps> = ({
   onNavigatePeople,
   onOpenTalk,
 }) => {
+  const { data } = useCMS();
+  const podcastConfig = data.podcastCarousel ?? defaultPodcastCarousel;
+
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const progressBarRef = useRef<HTMLDivElement>(null);
@@ -1352,6 +1357,17 @@ export const ApproachPage: React.FC<ApproachPageProps> = ({
             </ol>
           </figure>
         </section>
+
+        {/* ===================== PODCAST FLOW CAROUSEL ===================== */}
+        {podcastConfig.enabled !== false && (
+          <PodcastFlowCarousel
+            items={podcastConfig.items}
+            speed={podcastConfig.speed}
+            onItemClick={(item) => {
+              console.log('Selected:', item.title);
+            }}
+          />
+        )}
 
         {/* ===================== JOURNEY SECTION ===================== */}
         <section className="section" id="journey" aria-labelledby="journey-title">

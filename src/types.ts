@@ -600,6 +600,22 @@ export interface CorridorHeroConfig {
   images: CorridorImage[];
 }
 
+export interface PodcastCardItem {
+  id: string;
+  title: string;
+  imageSrc: string;
+  badgeText?: string;
+  headlinePrimary?: string;
+  headlineSecondary?: string;
+  questionMark?: boolean;
+}
+
+export interface PodcastCarouselConfig {
+  enabled: boolean;
+  speed: number;
+  items: PodcastCardItem[];
+}
+
 
 
 

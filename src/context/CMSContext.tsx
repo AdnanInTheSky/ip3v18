@@ -9,11 +9,12 @@ import type {
   WhyIp3Config,
   EightSystemsConfig,
   CorridorHeroConfig,
+  PodcastCarouselConfig,
 } from '../types';
 
 // Defaults live in ../data/defaultContent so `npm run db:seed` can load them in
 // Node. Re-exported here because components already import them from this file.
-import { DEFAULT_WEBSITE_DATA, defaultThemeConfig, defaultEightSystemsConfig, defaultCorridorHero, defaultWhyIp3 } from '../data/defaultContent';
+import { DEFAULT_WEBSITE_DATA, defaultThemeConfig, defaultEightSystemsConfig, defaultCorridorHero, defaultWhyIp3, defaultPodcastCarousel } from '../data/defaultContent';
 import type { WebsiteData } from '../data/defaultContent';
 import type { PrimaryNavItem, NavbarConfig } from '../data/navigationData';
 
@@ -31,6 +32,7 @@ export {
   defaultEightSystemsConfig,
   defaultWhyIp3,
   defaultCorridorHero,
+  defaultPodcastCarousel,
 } from '../data/defaultContent';
 export { primaryNav as defaultNavigation, defaultNavbarConfig } from '../data/navigationData';
 export type { PrimaryNavItem, NavLinkItem, NavColumnItem, NavPromoItem, NavbarConfig } from '../data/navigationData';
@@ -64,6 +66,7 @@ interface CMSContextType {
   updateWhyIp3: (whyIp3: WhyIp3Config) => void;
   updateEightSystems: (eightSystems: EightSystemsConfig) => void;
   updateCorridorHero: (corridorHero: CorridorHeroConfig) => void;
+  updatePodcastCarousel: (podcastCarousel: PodcastCarouselConfig) => void;
   updateNavigation: (navigation: PrimaryNavItem[]) => void;
   updateNavbar: (navbar: NavbarConfig) => void;
   resetAllContent: () => void;
@@ -108,6 +111,10 @@ const getStoredContent = (): WebsiteData => {
             eightSystems: {
               ...defaultEightSystemsConfig,
               ...(parsed.eightSystems || {}),
+            },
+            podcastCarousel: {
+              ...defaultPodcastCarousel,
+              ...(parsed.podcastCarousel || {}),
             },
           };
         }
@@ -338,6 +345,10 @@ export const CMSProvider: React.FC<CMSProviderProps> = ({ children, readOnly = f
                 eightSystems: {
                   ...defaultEightSystemsConfig,
                   ...(parsed.eightSystems || {}),
+                },
+                podcastCarousel: {
+                  ...defaultPodcastCarousel,
+                  ...(parsed.podcastCarousel || {}),
                 },
               };
               setData(localMerged);
@@ -634,6 +645,10 @@ export const CMSProvider: React.FC<CMSProviderProps> = ({ children, readOnly = f
     setData((prev) => ({ ...prev, corridorHero }));
   };
 
+  const updatePodcastCarousel = (podcastCarousel: PodcastCarouselConfig) => {
+    setData((prev) => ({ ...prev, podcastCarousel }));
+  };
+
   const updateNavigation = (navigation: PrimaryNavItem[]) => {
     const cleaned = sanitizeNav(navigation) || navigation;
     setData((prev) => ({ ...prev, navigation: cleaned }));
@@ -699,6 +714,7 @@ export const CMSProvider: React.FC<CMSProviderProps> = ({ children, readOnly = f
         updateWhyIp3,
         updateEightSystems,
         updateCorridorHero,
+        updatePodcastCarousel,
         updateNavigation,
         updateNavbar,
         resetAllContent,

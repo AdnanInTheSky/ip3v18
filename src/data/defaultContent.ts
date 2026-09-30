@@ -34,6 +34,8 @@ import {
   EightSystemsConfig,
   CorridorHeroConfig,
   CorridorImage,
+  PodcastCardItem,
+  PodcastCarouselConfig,
 } from '../types';
 
 import { defaultSlides } from './slides';
@@ -81,6 +83,7 @@ export interface WebsiteData {
   whyIp3?: WhyIp3Config;
   eightSystems?: EightSystemsConfig;
   corridorHero?: CorridorHeroConfig;
+  podcastCarousel?: PodcastCarouselConfig;
   /** Site navigation: mega-menu columns, links and promos. */
   navigation: PrimaryNavItem[];
   /** Navbar chrome: brand, CTA, top bar, search. */
@@ -1008,6 +1011,47 @@ export const defaultWhyIp3: WhyIp3Config = {
   ],
 };
 
+export const defaultPodcastCarousel: PodcastCarouselConfig = {
+  enabled: true,
+  speed: 40,
+  items: [
+    {
+      id: 'ep-1',
+      title: 'Problem Solving কি বাস্তব জীবনে প্রভাব ফেলে?',
+      imageSrc: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80',
+      badgeText: 'Problem Solving কি',
+      headlinePrimary: 'বাস্তব জীবনে',
+      headlineSecondary: 'প্রভাব ফেলে?',
+      questionMark: true,
+    },
+    {
+      id: 'ep-2',
+      title: 'PHITRON এর STUDENT PODCAST স্ক্রিপ্টেড হয়?',
+      imageSrc: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80',
+      badgeText: 'PHITRON এর',
+      headlinePrimary: 'STUDENT PODCAST',
+      headlineSecondary: 'স্ক্রিপ্টেড হয়?',
+      questionMark: true,
+    },
+    {
+      id: 'ep-3',
+      title: 'ডিপ্লোমা স্টুডেন্টদের ভবিষ্যৎ!',
+      imageSrc: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80',
+      badgeText: 'ডিপ্লোমা স্টুডেন্টদের',
+      headlinePrimary: 'ভবিষ্যৎ!',
+      headlineSecondary: '',
+    },
+    {
+      id: 'ep-4',
+      title: 'প্রোগ্রামিং-এর জন্য স্বপ্নের পাবলিক ভার্সিটি ছেড়ে দিলাম!',
+      imageSrc: 'https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?auto=format&fit=crop&w=800&q=80',
+      badgeText: 'প্রোগ্রামিং-এর জন্য',
+      headlinePrimary: 'স্বপ্নের পাবলিক ভার্সিটি',
+      headlineSecondary: 'ছেড়ে দিলাম!',
+    },
+  ],
+};
+
 export const DEFAULT_WEBSITE_DATA: WebsiteData = {
   slides: defaultSlides,
   movie: defaultMovie,
@@ -1033,6 +1077,7 @@ export const DEFAULT_WEBSITE_DATA: WebsiteData = {
   whyIp3: defaultWhyIp3,
   eightSystems: defaultEightSystemsConfig,
   corridorHero: defaultCorridorHero,
+  podcastCarousel: defaultPodcastCarousel,
   navigation: defaultNavigation,
   navbar: defaultNavbarConfig,
   timeSlots: defaultTimeSlots,

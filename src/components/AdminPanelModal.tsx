@@ -28,6 +28,7 @@ import {
   MessageSquareQuote,
   Menu as MenuIcon,
   Layers,
+  Radio,
 } from 'lucide-react';
 import { useCMS, defaultThemeConfig, defaultTrustMatrix, defaultTreeFramework, defaultTestimonialsSection, defaultWhyIp3 } from '../context/CMSContext';
 import { defaultStoryThemes, defaultSystemsHero } from '../data/defaultContent';
@@ -38,6 +39,7 @@ import { MediaField } from './MediaField';
 import { ThemeTypographyStudio } from './ThemeTypographyStudio';
 import { SystemsManager } from './SystemsManager';
 import { CorridorManager } from './CorridorManager';
+import { PodcastFlowManager } from './PodcastFlowManager';
 
 interface AdminPanelModalProps {
   isOpen: boolean;
@@ -81,7 +83,7 @@ export const AdminPanelModal: React.FC<AdminPanelModalProps> = ({ isOpen, onClos
 
   // Active Tab
   const [activeTab, setActiveTab] = useState<
-    'slides' | 'whyIp3' | 'systems' | 'corridor' | 'navigation' | 'colors' | 'movie' | 'trustMatrix' | 'tree' | 'testimonials' | 'executive' | 'team' | 'services' | 'research' | 'projects' | 'parallax' | 'backup'
+    'slides' | 'podcastFlow' | 'whyIp3' | 'systems' | 'corridor' | 'navigation' | 'colors' | 'movie' | 'trustMatrix' | 'tree' | 'testimonials' | 'executive' | 'team' | 'services' | 'research' | 'projects' | 'parallax' | 'backup'
   >('slides');
 
 
@@ -260,6 +262,18 @@ export const AdminPanelModal: React.FC<AdminPanelModalProps> = ({ isOpen, onClos
               >
                 <Layers className="w-4 h-4 text-orange-400" />
                 <span>3D Visual Corridor</span>
+              </button>
+
+              <button
+                onClick={() => setActiveTab('podcastFlow')}
+                className={`w-full px-3.5 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2.5 cursor-pointer ${
+                  activeTab === 'podcastFlow'
+                    ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/30'
+                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
+                }`}
+              >
+                <Radio className="w-4 h-4 text-rose-400" />
+                <span>Podcast Flow Carousel</span>
               </button>
 
               <button
@@ -934,6 +948,9 @@ export const AdminPanelModal: React.FC<AdminPanelModalProps> = ({ isOpen, onClos
 
               {/* TAB: 3D VISUAL CORRIDOR */}
               {activeTab === 'corridor' && <CorridorManager onShowToast={showToast} />}
+
+              {/* TAB: PODCAST FLOW CAROUSEL */}
+              {activeTab === 'podcastFlow' && <PodcastFlowManager onShowToast={showToast} />}
 
               {/* TAB: THEME & COLOR STUDIO */}
               {activeTab === 'navigation' && <NavigationManager />}
