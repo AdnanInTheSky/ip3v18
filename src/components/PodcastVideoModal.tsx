@@ -50,59 +50,22 @@ export const PodcastVideoModal: React.FC<PodcastVideoModalProps> = ({ item, isOp
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-md transition-all animate-in fade-in duration-200"
+      className="podcast-video-modal-backdrop fixed inset-0 z-[99999] flex items-center justify-center p-3 sm:p-6 pt-24 sm:pt-8 bg-black/85 backdrop-blur-md transition-all animate-in fade-in duration-200"
+      style={{ zIndex: 99999 }}
       onClick={onClose}
     >
       <div
         className="relative w-full max-w-4xl bg-[#09131f] border border-slate-800 rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-black/80 flex flex-col"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header */}
-        <div className="flex items-center justify-between px-4 sm:px-6 py-3.5 sm:py-4 border-b border-slate-800 bg-[#081220]">
-          <div className="flex items-center gap-3 min-w-0 pr-2">
-            {/* YouTube Red Icon Badge */}
-            <div className="w-8 h-8 rounded-lg bg-red-600/15 border border-red-500/30 flex items-center justify-center text-red-500 shrink-0">
-              <Play className="w-4 h-4 fill-red-500 ml-0.5" />
-            </div>
-
-            <div className="min-w-0">
-              <div className="flex items-center gap-2">
-                <span className="text-[10px] sm:text-[11px] font-bold tracking-wider uppercase text-red-400 bg-red-500/10 px-2 py-0.5 rounded border border-red-500/20">
-                  YouTube Video
-                </span>
-                {item.badgeText && (
-                  <span className="hidden sm:inline-block text-[11px] text-slate-400 font-medium truncate">
-                    {item.badgeText}
-                  </span>
-                )}
-              </div>
-              <h3 className="text-sm sm:text-base font-bold text-slate-100 truncate mt-0.5">
-                {item.title}
-              </h3>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2 shrink-0">
-            <a
-              href={directWatchUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700/80 text-xs font-semibold transition-colors"
-              title="Open on YouTube"
-            >
-              <ExternalLink className="w-3.5 h-3.5 text-red-400" />
-              <span>Watch on YouTube</span>
-            </a>
-
-            <button
-              onClick={onClose}
-              className="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-xl transition-colors cursor-pointer border border-slate-800"
-              aria-label="Close video modal"
-            >
-              <X className="w-5 h-5" />
-            </button>
-          </div>
-        </div>
+        {/* Floating Close Button */}
+        <button
+          onClick={onClose}
+          className="absolute top-3 right-3 z-30 p-2 sm:p-2.5 rounded-full bg-black/75 hover:bg-black text-white/90 hover:text-white border border-white/20 backdrop-blur-md shadow-xl transition-all cursor-pointer hover:scale-105"
+          aria-label="Close video modal"
+        >
+          <X className="w-5 h-5" />
+        </button>
 
         {/* Video Embed Player */}
         <div className="relative aspect-video w-full bg-black flex items-center justify-center">
@@ -139,19 +102,25 @@ export const PodcastVideoModal: React.FC<PodcastVideoModalProps> = ({ item, isOp
         </div>
 
         {/* Footer */}
-        <div className="px-4 sm:px-6 py-3 bg-[#081220] border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
-          <div className="flex items-center gap-2 truncate">
-            {item.headlinePrimary && (
-              <span className="text-amber-300 font-semibold truncate">{item.headlinePrimary}</span>
-            )}
-            {item.headlineSecondary && (
-              <span className="text-slate-300 font-medium truncate">{item.headlineSecondary}</span>
+        <div className="px-4 sm:px-6 py-3 bg-[#081220] border-t border-slate-800 flex items-center justify-between text-xs text-slate-400 gap-3">
+          <div className="flex items-center gap-2.5 min-w-0 truncate">
+            <span className="font-semibold text-slate-200 truncate">{item.title}</span>
+            {directWatchUrl && (
+              <a
+                href={directWatchUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden sm:inline-flex items-center gap-1 text-red-400 hover:text-red-300 font-medium transition-colors shrink-0"
+              >
+                <ExternalLink className="w-3 h-3" />
+                <span>Watch on YouTube</span>
+              </a>
             )}
           </div>
 
           <button
             onClick={onClose}
-            className="px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition-colors cursor-pointer shrink-0 ml-3"
+            className="px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition-colors cursor-pointer shrink-0"
           >
             Close
           </button>

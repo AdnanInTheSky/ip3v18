@@ -3018,6 +3018,18 @@ div#root > div > div > main > section:nth-of-type(2) { min-height: 80svh; displa
 }
 
 /* Explicit focus mode matching rules */
+.approach-page:has(.podcast-video-modal-backdrop),
+.approach-page .page-main:has(.podcast-video-modal-backdrop),
+.podcast-video-modal-backdrop {
+  z-index: 99999 !important;
+}
+
+.podcast-flow-section {
+  scroll-margin-top: 130px;
+  position: relative;
+  z-index: 10;
+}
+
 div#root > div > div > main.page-main,
 .approach-page .page-main {
   color: #1C1917;

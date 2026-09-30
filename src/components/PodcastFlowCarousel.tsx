@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import { Play, ChevronLeft, ChevronRight, HelpCircle } from 'lucide-react';
+import { Play, ChevronLeft, ChevronRight } from 'lucide-react';
 import { PodcastCardItem } from '../types';
 import { PodcastVideoModal } from './PodcastVideoModal';
 
@@ -201,7 +201,10 @@ export const PodcastFlowCarousel: React.FC<PodcastFlowCarouselProps> = ({
   };
 
   return (
-    <section className="relative w-full py-6 sm:py-10 overflow-hidden select-none bg-transparent">
+    <section
+      id="podcast-flow"
+      className="podcast-flow-section relative w-full pt-10 pb-8 sm:pt-14 sm:pb-12 overflow-hidden select-none bg-transparent scroll-mt-28 sm:scroll-mt-36 z-10"
+    >
       <div className="w-full relative px-0 bg-transparent">
         {/* Carousel Outer Wrapper */}
         <div
@@ -270,55 +273,17 @@ export const PodcastFlowCarousel: React.FC<PodcastFlowCarouselProps> = ({
                   className="group relative flex-shrink-0 cursor-pointer select-none rounded-2xl p-2.5 sm:p-3 bg-[#131d2b] border border-[#1e2a3c] hover:border-red-500/60 shadow-md shadow-black/40 hover:-translate-y-1 transition-all duration-300"
                   style={{ width: 'clamp(280px, 31vw, 410px)' }}
                 >
-                  {/* Thumbnail Container */}
+                  {/* Thumbnail Container - Pure YouTube Video Preview */}
                   <div className="relative aspect-video w-full overflow-hidden rounded-xl bg-[#0a111c]">
                     <img
                       src={item.imageSrc}
-                      alt={item.title}
+                      alt={item.title || 'YouTube video'}
                       loading="lazy"
                       className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                     />
 
-                    {/* Dark Studio Ambient Scrim */}
-                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/60" />
-
-                    {/* Top Branding Badge */}
-                    <div className="absolute top-2.5 inset-x-3 flex items-center justify-between pointer-events-none z-10">
-                      <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-black/60 backdrop-blur-xs border border-white/10 text-[11px] font-bold text-slate-200">
-                        <span className="text-red-500 font-black">▶</span>
-                        <span>YouTube Video</span>
-                      </div>
-                      <div className="flex items-center gap-1 px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-xs border border-white/10">
-                        <div className="w-3.5 h-3.5 rounded-full bg-red-600 flex items-center justify-center text-[9px] font-black text-white">
-                          ▶
-                        </div>
-                        <span className="text-[10px] sm:text-[11px] font-bold text-white tracking-tight">
-                          Phitron
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Text Graphics Overlay */}
-                    <div className="absolute inset-x-2.5 bottom-2 sm:bottom-3 z-10 flex flex-col items-center text-center pointer-events-none">
-                      {item.badgeText && (
-                        <div className="inline-block bg-[#dc2626] text-white text-[11px] sm:text-xs font-bold px-2 py-0.5 rounded-sm shadow-md">
-                          {item.badgeText}
-                        </div>
-                      )}
-                      {item.headlinePrimary && (
-                        <div className="text-amber-300 font-extrabold text-sm sm:text-base leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
-                          {item.headlinePrimary}
-                        </div>
-                      )}
-                      {item.headlineSecondary && (
-                        <div className="text-white font-extrabold text-sm sm:text-base leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)] flex items-center gap-1">
-                          <span>{item.headlineSecondary}</span>
-                          {item.questionMark && (
-                            <HelpCircle className="w-3.5 h-3.5 text-cyan-400 inline" />
-                          )}
-                        </div>
-                      )}
-                    </div>
+                    {/* Subtle Hover Vignette */}
+                    <div className="pointer-events-none absolute inset-0 bg-black/10 group-hover:bg-black/25 transition-colors duration-300" />
 
                     {/* Circular White Play Button with Red YouTube Play Icon */}
                     <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
