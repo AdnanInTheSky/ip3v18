@@ -291,12 +291,27 @@ export const CMSProvider: React.FC<CMSProviderProps> = ({ children, readOnly = f
     const res = await loadContent();
 
     if (res.data) {
+      // Retain any user modifications saved locally so refreshing never discards recent edits
+      let localEightSystems = {};
+      if (typeof window !== 'undefined') {
+        try {
+          const raw = localStorage.getItem('ip3_site_content_permanent');
+          if (raw) {
+            const parsed = JSON.parse(raw);
+            if (parsed && typeof parsed === 'object' && parsed.eightSystems) {
+              localEightSystems = parsed.eightSystems;
+            }
+          }
+        } catch {}
+      }
+
       const merged: WebsiteData = {
         ...DEFAULT_WEBSITE_DATA,
         ...(res.data as Partial<WebsiteData>),
         eightSystems: {
           ...defaultEightSystemsConfig,
           ...((res.data as any).eightSystems || {}),
+          ...localEightSystems,
         },
       };
       if (merged.navigation) {
@@ -655,7 +670,16 @@ export const CMSProvider: React.FC<CMSProviderProps> = ({ children, readOnly = f
   };
 
   const updateEightSystems = (eightSystems: EightSystemsConfig) => {
-    setData((prev) => ({ ...prev, eightSystems }));
+    setData((prev) => {
+      const next = { ...prev, eightSystems };
+      if (typeof window !== 'undefined') {
+        try {
+          localStorage.setItem('ip3_site_content_permanent', JSON.stringify(next));
+        } catch {}
+      }
+      return next;
+    });
+    void pushToServer({ ...latestDataRef.current, eightSystems });
   };
 
   const updateCorridorHero = (corridorHero: CorridorHeroConfig) => {
