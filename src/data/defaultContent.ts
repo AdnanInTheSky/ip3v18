@@ -36,11 +36,13 @@ import {
   CorridorImage,
   PodcastCardItem,
   PodcastCarouselConfig,
+  FacultyMember,
 } from '../types';
 
 import { defaultSlides } from './slides';
 import { defaultMovie } from './movieData';
 import { SYSTEMS_DATA } from './systems';
+import { FACULTY_MEMBERS } from './peopleData';
 import {
   ip3OfficeInfo,
   consultingServices as defaultServices,
@@ -68,6 +70,7 @@ export interface WebsiteData {
   executive: ExecutiveProfile;
   impactPillars: ImpactPillar[];
   teamMembers: TeamMember[];
+  facultyMembers?: FacultyMember[];
   researchSection: ResearchSectionData;
   operationalFronts: OperationalFront[];
   parallaxCards: ParallaxCardItem[];
@@ -725,34 +728,6 @@ export const defaultTeamMembers: TeamMember[] = [
   }
 ];
 
-export interface WebsiteData {
-  slides: SlideItem[];
-  movie: Movie;
-  officeInfo: OfficeInfo;
-  services: ServiceOption[];
-  trustStats: StatItem[];
-  faqItems: FaqItem[];
-  executive: ExecutiveProfile;
-  impactPillars: ImpactPillar[];
-  teamMembers: TeamMember[];
-  researchSection: ResearchSectionData;
-  operationalFronts: OperationalFront[];
-  parallaxCards: ParallaxCardItem[];
-  focusAreas: FocusAreaItem[];
-  projects: ProjectItemData[];
-  serviceSolutions?: ServiceSolutionItem[];
-  treeFramework?: TreeFrameworkData;
-  testimonialsSection?: TestimonialSectionData;
-  trustMatrix?: TrustMatrixData;
-  themeConfig: SiteThemeConfig;
-  storyThemes?: StoryTheme[];
-  systemsHero?: SystemsHeroSectionData;
-  navigation: PrimaryNavItem[];
-  navbar: NavbarConfig;
-  timeSlots: string[];
-  clientTestimonials: typeof defaultClientTestimonials;
-}
-
 export const defaultStoryThemes: StoryTheme[] = [
   {
     id: 'polysolutions',
@@ -1066,6 +1041,7 @@ export const DEFAULT_WEBSITE_DATA: WebsiteData = {
   executive: defaultExecutive,
   impactPillars: defaultPillars,
   teamMembers: defaultTeamMembers,
+  facultyMembers: FACULTY_MEMBERS,
   researchSection: defaultResearchSection,
   operationalFronts: defaultOperationalFronts,
   parallaxCards: defaultParallaxCards,

@@ -10,6 +10,7 @@ import type {
   EightSystemsConfig,
   CorridorHeroConfig,
   PodcastCarouselConfig,
+  FacultyMember,
 } from '../types';
 
 // Defaults live in ../data/defaultContent so `npm run db:seed` can load them in
@@ -51,6 +52,8 @@ interface CMSContextType {
   updateExecutive: (executive: ExecutiveProfile) => void;
   updateImpactPillars: (pillars: ImpactPillar[]) => void;
   updateTeamMembers: (team: TeamMember[]) => void;
+  updateFacultyMembers: (facultyMembers: FacultyMember[]) => void;
+  updateFacultyMemberImage: (id: string, imageUrl: string) => void;
   updateResearchSection: (researchSection: ResearchSectionData) => void;
   updateOperationalFronts: (fronts: OperationalFront[]) => void;
   updateParallaxCards: (cards: ParallaxCardItem[]) => void;
@@ -585,6 +588,20 @@ export const CMSProvider: React.FC<CMSProviderProps> = ({ children, readOnly = f
     setData((prev) => ({ ...prev, teamMembers }));
   };
 
+  const updateFacultyMembers = (facultyMembers: FacultyMember[]) => {
+    setData((prev) => ({ ...prev, facultyMembers }));
+  };
+
+  const updateFacultyMemberImage = (id: string, imageUrl: string) => {
+    setData((prev) => {
+      const list = prev.facultyMembers || [];
+      return {
+        ...prev,
+        facultyMembers: list.map((m) => (m.id === id ? { ...m, imageUrl } : m)),
+      };
+    });
+  };
+
   const updateResearchSection = (researchSection: ResearchSectionData) => {
     setData((prev) => ({ ...prev, researchSection }));
   };
@@ -699,6 +716,8 @@ export const CMSProvider: React.FC<CMSProviderProps> = ({ children, readOnly = f
         updateExecutive,
         updateImpactPillars,
         updateTeamMembers,
+        updateFacultyMembers,
+        updateFacultyMemberImage,
         updateResearchSection,
         updateOperationalFronts,
         updateParallaxCards,

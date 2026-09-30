@@ -135,6 +135,8 @@ export interface TeamMember {
   stats: MemberStats;
 }
 
+export type { FacultyMember } from './data/peopleData';
+
 export interface ContactFormData {
   name: string;
   email: string;
