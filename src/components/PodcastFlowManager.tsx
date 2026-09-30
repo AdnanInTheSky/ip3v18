@@ -46,6 +46,7 @@ export const PodcastFlowManager: React.FC<PodcastFlowManagerProps> = ({ onShowTo
       id: `ep-${Date.now()}`,
       title: `New Podcast Episode ${config.items.length + 1}`,
       imageSrc: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80',
+      youtubeUrl: 'https://www.youtube.com/watch?v=gT_uK0Y7oFw',
       badgeText: 'IP³ PODCAST',
       headlinePrimary: 'Policy & Innovation',
       headlineSecondary: 'In Practice',
@@ -283,6 +284,35 @@ export const PodcastFlowManager: React.FC<PodcastFlowManagerProps> = ({ onShowTo
                       placeholder="e.g. Problem Solving কি বাস্তব জীবনে প্রভাব ফেলে?"
                       className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-rose-500"
                     />
+                  </div>
+
+                  <div>
+                    <label className="block text-[11px] font-bold uppercase tracking-wider text-red-400 mb-1 flex items-center justify-between">
+                      <span className="flex items-center gap-1.5">
+                        <Play className="w-3.5 h-3.5 fill-red-500 text-red-500" />
+                        <span>YouTube Video URL or Video ID</span>
+                      </span>
+                      {item.youtubeUrl && (
+                        <a
+                          href={item.youtubeUrl.startsWith('http') ? item.youtubeUrl : `https://www.youtube.com/watch?v=${item.youtubeUrl}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[10px] text-red-400 hover:text-red-300 normal-case underline"
+                        >
+                          Test Link
+                        </a>
+                      )}
+                    </label>
+                    <input
+                      type="text"
+                      value={item.youtubeUrl || ''}
+                      onChange={(e) => handleItemChange(index, 'youtubeUrl', e.target.value)}
+                      placeholder="e.g. https://www.youtube.com/watch?v=... or 11-char ID"
+                      className="w-full px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-red-500 font-mono text-xs"
+                    />
+                    <p className="text-[10px] text-slate-500 mt-1">
+                      Visitors who click this card in the carousel will watch this YouTube video in the popup player.
+                    </p>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">

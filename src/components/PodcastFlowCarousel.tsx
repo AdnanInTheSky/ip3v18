@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Play, ChevronLeft, ChevronRight, HelpCircle } from 'lucide-react';
 import { PodcastCardItem } from '../types';
+import { PodcastVideoModal } from './PodcastVideoModal';
 
 export type { PodcastCardItem };
 
@@ -10,6 +11,7 @@ export const DEFAULT_PODCAST_ITEMS: PodcastCardItem[] = [
     id: 'ep-1',
     title: 'Problem Solving কি বাস্তব জীবনে প্রভাব ফেলে?',
     imageSrc: 'https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=800&q=80',
+    youtubeUrl: 'https://www.youtube.com/watch?v=gT_uK0Y7oFw',
     badgeText: 'Problem Solving কি',
     headlinePrimary: 'বাস্তব জীবনে',
     headlineSecondary: 'প্রভাব ফেলে?',
@@ -19,6 +21,7 @@ export const DEFAULT_PODCAST_ITEMS: PodcastCardItem[] = [
     id: 'ep-2',
     title: 'PHITRON এর STUDENT PODCAST স্ক্রিপ্টেড হয়?',
     imageSrc: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80',
+    youtubeUrl: 'https://www.youtube.com/watch?v=rWj_s5D_6hA',
     badgeText: 'PHITRON এর',
     headlinePrimary: 'STUDENT PODCAST',
     headlineSecondary: 'স্ক্রিপ্টেড হয়?',
@@ -28,6 +31,7 @@ export const DEFAULT_PODCAST_ITEMS: PodcastCardItem[] = [
     id: 'ep-3',
     title: 'ডিপ্লোমা স্টুডেন্টদের ভবিষ্যৎ!',
     imageSrc: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80',
+    youtubeUrl: 'https://www.youtube.com/watch?v=3JZ_D3ELwOQ',
     badgeText: 'ডিপ্লোমা স্টুডেন্টদের',
     headlinePrimary: 'ভবিষ্যৎ!',
     headlineSecondary: '',
@@ -36,6 +40,7 @@ export const DEFAULT_PODCAST_ITEMS: PodcastCardItem[] = [
     id: 'ep-4',
     title: 'প্রোগ্রামিং-এর জন্য স্বপ্নের পাবলিক ভার্সিটি ছেড়ে দিলাম!',
     imageSrc: 'https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?auto=format&fit=crop&w=800&q=80',
+    youtubeUrl: 'https://www.youtube.com/watch?v=kYv_37v4k2o',
     badgeText: 'প্রোগ্রামিং-এর জন্য',
     headlinePrimary: 'স্বপ্নের পাবলিক ভার্সিটি',
     headlineSecondary: 'ছেড়ে দিলাম!',
@@ -55,6 +60,7 @@ export const PodcastFlowCarousel: React.FC<PodcastFlowCarouselProps> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
+  const [activeVideoItem, setActiveVideoItem] = useState<PodcastCardItem | null>(null);
 
   const trackRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -252,13 +258,16 @@ export const PodcastFlowCarousel: React.FC<PodcastFlowCarouselProps> = ({
               >
                 <div
                   onClick={() => {
-                    if (!hasMovedRef.current && onItemClick) {
-                      onItemClick(item);
+                    if (!hasMovedRef.current) {
+                      setActiveVideoItem(item);
+                      if (onItemClick) {
+                        onItemClick(item);
+                      }
                     }
                   }}
                   role="button"
                   tabIndex={0}
-                  className="group relative flex-shrink-0 cursor-pointer select-none rounded-2xl p-2.5 sm:p-3 bg-[#131d2b] border border-[#1e2a3c] hover:border-slate-500/80 shadow-md shadow-black/40 hover:-translate-y-1 transition-all duration-300"
+                  className="group relative flex-shrink-0 cursor-pointer select-none rounded-2xl p-2.5 sm:p-3 bg-[#131d2b] border border-[#1e2a3c] hover:border-red-500/60 shadow-md shadow-black/40 hover:-translate-y-1 transition-all duration-300"
                   style={{ width: 'clamp(280px, 31vw, 410px)' }}
                 >
                   {/* Thumbnail Container */}
@@ -271,19 +280,19 @@ export const PodcastFlowCarousel: React.FC<PodcastFlowCarouselProps> = ({
                     />
 
                     {/* Dark Studio Ambient Scrim */}
-                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/60" />
+                    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/60" />
 
                     {/* Top Branding Badge */}
                     <div className="absolute top-2.5 inset-x-3 flex items-center justify-between pointer-events-none z-10">
                       <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-black/60 backdrop-blur-xs border border-white/10 text-[11px] font-bold text-slate-200">
                         <span className="text-red-500 font-black">▶</span>
-                        <span>PHICAST+</span>
+                        <span>YouTube Video</span>
                       </div>
                       <div className="flex items-center gap-1 px-1.5 py-0.5 rounded bg-black/60 backdrop-blur-xs border border-white/10">
-                        <div className="w-3.5 h-3.5 rounded-full bg-yellow-400 flex items-center justify-center text-[9px] font-black text-slate-950">
-                          P
+                        <div className="w-3.5 h-3.5 rounded-full bg-red-600 flex items-center justify-center text-[9px] font-black text-white">
+                          ▶
                         </div>
-                        <span className="text-[10px] sm:text-[11px] font-bold text-yellow-300/90 tracking-tight">
+                        <span className="text-[10px] sm:text-[11px] font-bold text-white tracking-tight">
                           Phitron
                         </span>
                       </div>
@@ -311,10 +320,10 @@ export const PodcastFlowCarousel: React.FC<PodcastFlowCarouselProps> = ({
                       )}
                     </div>
 
-                    {/* Exact Circular White Play Button with Blue Icon */}
+                    {/* Circular White Play Button with Red YouTube Play Icon */}
                     <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white shadow-xl shadow-black/70 flex items-center justify-center transform transition-all duration-300 group-hover:scale-115">
-                        <Play className="w-5 h-5 sm:w-6 sm:h-6 text-[#1d4ed8] fill-[#1d4ed8] ml-0.5" />
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white shadow-xl shadow-black/80 flex items-center justify-center transform transition-all duration-300 group-hover:scale-115">
+                        <Play className="w-5 h-5 sm:w-6 sm:h-6 text-[#dc2626] fill-[#dc2626] ml-0.5" />
                       </div>
                     </div>
                   </div>
@@ -324,6 +333,14 @@ export const PodcastFlowCarousel: React.FC<PodcastFlowCarouselProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Interactive YouTube Video Player Modal */}
+      <PodcastVideoModal
+        item={activeVideoItem}
+        isOpen={Boolean(activeVideoItem)}
+        onClose={() => setActiveVideoItem(null)}
+      />
     </section>
   );
 };
+

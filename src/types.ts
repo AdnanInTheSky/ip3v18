@@ -604,6 +604,7 @@ export interface PodcastCardItem {
   id: string;
   title: string;
   imageSrc: string;
+  youtubeUrl?: string;
   badgeText?: string;
   headlinePrimary?: string;
   headlineSecondary?: string;
