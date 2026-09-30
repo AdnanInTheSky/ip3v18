@@ -233,9 +233,9 @@ export const EightSystemsHero: React.FC<EightSystemsHeroProps> = ({
       <div className="pt-2 pb-6 px-0 mx-0">
         {/* 8 Systems Pills Grid / Buttons - Hidden when detail panel is active */}
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
+          initial={{ opacity: 1, y: 0 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className={`w-full relative z-10 ${selectedSystemId ? 'hidden' : 'block'}`}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 w-full">
@@ -254,15 +254,36 @@ export const EightSystemsHero: React.FC<EightSystemsHeroProps> = ({
             >
               <div className="w-full text-left text-start">
                 <h1
-                  style={{ fontSize: 'clamp(2.4rem, 4vw, 56px)', textAlign: 'start' }}
-                  className={`${getFontClass()} leading-[1.08] sm:leading-[1.02] tracking-[-0.03em] font-normal text-slate-900 text-left text-start`}
+                  style={{
+                    fontSize: 'clamp(2.4rem, 4vw, 56px)',
+                    textAlign: 'start',
+                    fontFamily: "'Newsreader', Georgia, serif",
+                  }}
+                  className="font-serif-newsreader leading-[1.08] sm:leading-[1.02] tracking-[-0.03em] font-normal text-slate-900 text-left text-start"
                 >
-                  <span className="block text-left text-start">{titleMain || 'Operationalized Across '}</span>
                   <span
-                    className="block text-slate-500 text-[54px] text-left text-start"
-                    style={{ fontSize: '54px', textAlign: 'start' }}
+                    className="block text-left text-start text-slate-900"
+                    style={{
+                      fontSize: 'inherit',
+                      textAlign: 'start',
+                      lineHeight: 'inherit',
+                      fontFamily: "'Newsreader', Georgia, serif",
+                      color: '#0f172a',
+                    }}
                   >
-                    {titleHighlight || '8 Interconnected Realities.'}
+                    Operationalized Across{' '}
+                  </span>
+                  <span
+                    className="block text-slate-500 text-left text-start"
+                    style={{
+                      fontSize: 'inherit',
+                      textAlign: 'start',
+                      lineHeight: 'inherit',
+                      fontFamily: "'Newsreader', Georgia, serif",
+                      color: '#64748b',
+                    }}
+                  >
+                    8 Interconnected Realities.
                   </span>
                 </h1>
               </div>
