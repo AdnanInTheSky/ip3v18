@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, Users, Clock } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import SelectedEngagementsSection from './SelectedEngagementsSection';
-import InstitutionalEngagementsSection from './InstitutionalEngagementsSection';
 
 export interface Deliverable {
   id: string;
@@ -531,11 +529,6 @@ export default function OutputCategoriesList({
         </div>
       </main>
 
-      {/* Selected Engagements Component directly after main */}
-      <SelectedEngagementsSection />
-
-      {/* Institutional Engagements Pipeline (Styled like sector-systems-items-container) */}
-      <InstitutionalEngagementsSection />
     </div>
   );
 }

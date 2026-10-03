@@ -40,13 +40,6 @@ export const DataFocus: React.FC<DataFocusProps> = ({
       actionText: 'Domain Focus',
     },
     {
-      tag: 'Agritech',
-      title: 'Intelligence to the Farm',
-      description: 'Transform farms into high-tech fields using sensors, drones, and AI. Provide real-time data to optimize planting, watering, and harvesting, maximizing yield while conserving resources.',
-      image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      actionText: 'Domain Focus',
-    },
-    {
       tag: 'EdTech',
       title: 'Innovative Teaching',
       description: 'In many ways and at most institutional sites, education is still relatively untouched by technology. We are making a case for the transformative power of technology in learning for the digital age.',

@@ -58,15 +58,11 @@ export const SYSTEM_NODES: Record<SystemNodeId, SystemNodeInfo> = {
       'Policy-to-Execution Stress Testing',
       'Institutional Resilience Engineering'
     ],
-    metrics: [
-      { label: 'System Interoperability', value: '99.4%', subtext: 'Cross-pillar protocol compliance' },
-      { label: 'Implementation Velocity', value: '3.4x', subtext: 'Faster from policy draft to deployment' },
-      { label: 'Capital Absorption Rate', value: '92%', subtext: 'Targeted institutional capital deployment' }
-    ],
+    metrics: [],
     caseStudyHighlight: {
-      title: 'National Inclusive Digital Economy Architecture',
-      context: 'Multi-ministerial reform requiring coordinated policy, sovereign identity, and micro-finance rails.',
-      outcome: 'Reduced inter-agency processing latency by 78% while onboarding 14 million citizens.'
+      title: '',
+      context: '',
+      outcome: ''
     }
   },
   institutions: {
@@ -85,15 +81,11 @@ export const SYSTEM_NODES: Record<SystemNodeId, SystemNodeInfo> = {
       'Regulatory Authority Modernization',
       'Crisis Response Institutional Hardening'
     ],
-    metrics: [
-      { label: 'Agency Alignment', value: '+65%', subtext: 'Inter-ministerial coordination efficiency' },
-      { label: 'Capacity Retention', value: '94%', subtext: 'Knowledge retained post-program handover' },
-      { label: 'Decision Cycle Time', value: '-48%', subtext: 'Accelerated executive governance loops' }
-    ],
+    metrics: [],
     caseStudyHighlight: {
-      title: 'Ministry of Environment & Climate Modernization',
-      context: 'Restructuring regulatory oversight bodies across regional jurisdictions.',
-      outcome: 'Streamlined permitting and compliance enforcement down from 18 months to 45 days with automated audit trails.'
+      title: '',
+      context: '',
+      outcome: ''
     }
   },
   policy: {
@@ -112,15 +104,11 @@ export const SYSTEM_NODES: Record<SystemNodeId, SystemNodeInfo> = {
       'Cross-Border Policy Harmonization',
       'Public Consultation & Consensus Synthesis'
     ],
-    metrics: [
-      { label: 'Policy Adherence', value: '96.8%', subtext: 'Regulatory compliance across target cohorts' },
-      { label: 'Stakeholder Buy-in', value: '89%', subtext: 'Cross-party & civic sector alignment' },
-      { label: 'Draft-to-Statute Time', value: '4.2mo', subtext: 'Accelerated legislative development' }
-    ],
+    metrics: [],
     caseStudyHighlight: {
-      title: 'Cross-Border Digital Asset & Payments Sandbox',
-      context: 'Harmonizing cross-border fintech licensing rules across central bank jurisdictions.',
-      outcome: 'Drafted and ratified unified regulatory guidelines enabling instant multi-currency settlement.'
+      title: '',
+      context: '',
+      outcome: ''
     }
   },
   evidence: {
@@ -139,15 +127,11 @@ export const SYSTEM_NODES: Record<SystemNodeId, SystemNodeInfo> = {
       'Public-Private Coalition Engineering',
       'Evidence-to-Action Bilateral Bridges'
     ],
-    metrics: [
-      { label: 'Convening Depth', value: '7+ Sectors', subtext: 'Public, private, civic, multilateral' },
-      { label: 'Alliance Speed', value: '45-Day', subtext: 'Coalition formulation sprints' },
-      { label: 'Consensus Rate', value: '94%', subtext: 'Cross-ministerial alignment index' }
-    ],
+    metrics: [],
     caseStudyHighlight: {
-      title: 'Tripartite National Energy Transition Coalition',
-      context: 'Aligning sovereign ministries, independent power producers, and global climate funds.',
-      outcome: 'Brokered 15-year clean energy transition pact unblocking $3.2B in blended capital commitments.'
+      title: '',
+      context: '',
+      outcome: ''
     }
   },
   technology: {
@@ -166,15 +150,11 @@ export const SYSTEM_NODES: Record<SystemNodeId, SystemNodeInfo> = {
       'Zero-Trust Cybersecurity Architecture',
       'AI & Automated Decision System Governance'
     ],
-    metrics: [
-      { label: 'Uptime SLA', value: '99.99%', subtext: 'Mission-critical national rails reliability' },
-      { label: 'Throughput', value: '15k TPS', subtext: 'Scalable citizen transaction processing' },
-      { label: 'API Interoperability', value: '100%', subtext: 'Open standard compliance (REST/gRPC)' }
-    ],
+    metrics: [],
     caseStudyHighlight: {
-      title: 'Unified Health Data Exchange Protocol',
-      context: 'Connecting 400+ public clinics and 80 private hospital systems through an encrypted ledger.',
-      outcome: 'Universal patient record access within 2 seconds with cryptographic citizen consent verification.'
+      title: '',
+      context: '',
+      outcome: ''
     }
   },
   finance: {
@@ -193,15 +173,11 @@ export const SYSTEM_NODES: Record<SystemNodeId, SystemNodeInfo> = {
       'Public-Private Partnership (PPP) Feasibility',
       'Multilateral Development Bank (MDB) Co-Financing'
     ],
-    metrics: [
-      { label: 'Capital Mobilized', value: '$8.4B+', subtext: 'Private & institutional capital unlocked' },
-      { label: 'Leverage Ratio', value: '1:5.8', subtext: 'Private dollars per public dollar committed' },
-      { label: 'ESG Compliance', value: 'AAA', subtext: 'Certified Green Taxonomy alignment' }
-    ],
+    metrics: [],
     caseStudyHighlight: {
-      title: 'Decarbonization Blended Capital Facility',
-      context: 'Financing the conversion of 5,000 public municipal transit vehicles to clean battery electric.',
-      outcome: 'Secured $620M in commercial syndicated debt backed by a $110M sovereign climate guarantee.'
+      title: '',
+      context: '',
+      outcome: ''
     }
   },
   delivery: {
@@ -220,15 +196,11 @@ export const SYSTEM_NODES: Record<SystemNodeId, SystemNodeInfo> = {
       'Adaptive MERLA & Feedback Recalibration',
       'National Sovereign Memory Codification'
     ],
-    metrics: [
-      { label: 'On-Time Milestone Rate', value: '98.6%', subtext: 'Delivery unit sprint achievement' },
-      { label: 'Capability Transfer', value: '100%', subtext: 'Autonomous civil service operation' },
-      { label: 'Feedback Latency', value: '<72 hrs', subtext: 'Real-time adaptive policy adjustment' }
-    ],
+    metrics: [],
     caseStudyHighlight: {
-      title: 'National Sovereign Delivery Unit & Telemetry Desk',
-      context: 'Establishing multi-agency tracking dashboard for 12 parallel economic diversification programs.',
-      outcome: 'Achieved 96% on-time milestone delivery across 4 ministries with complete domestic handover in 18 months.'
+      title: '',
+      context: '',
+      outcome: ''
     }
   }
 };

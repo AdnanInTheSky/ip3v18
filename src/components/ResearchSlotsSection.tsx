@@ -35,23 +35,6 @@ export const RESEARCH_SLOTS: ResearchSlotItem[] = [
     ]
   },
   {
-    id: 'policy-reform-implementation-institutional-capacity',
-    title: 'From Policy Reform to Implementation: Why Institutional Capacity Determines Development Results',
-    author: 'Dr. Marcus Vance & State Governance Practice',
-    date: 'January 2025',
-    type: 'Policy Brief',
-    sector: 'Institutional Reform · State Capability & PFM',
-    description: 'Empirical audit of 42 multilateral programs proving that institutional absorptive capacity, civil service incentives, and statutory delivery unit authority explain 78% of reform variance.',
-    pdfLabel: 'PDF · 1.8 MB',
-    cta: 'Read Policy Brief',
-    abstract: 'Decades of international development finance demonstrate that technical policy design rarely fails on economics; it fails on institutional execution. By analyzing statutory delivery units and public financial management workflows across 42 sovereign reforms, this brief codifies the operational mechanisms that translate cabinet decrees into durable administrative habit.',
-    keyFindings: [
-      'Reforms backed by statutory delivery units with direct executive reporting achieve 2.4x higher KPI adherence.',
-      'Inter-ministerial civil service rotation incentives prevent technical team attrition during leadership transitions.',
-      'PFM procurement milestones must be calibrated to departmental absorptive capacity rather than fiscal calendar deadlines.'
-    ]
-  },
-  {
     id: 'private-capital-mobilization-low-income-economies',
     title: 'Private Capital Mobilization in Low-Income Economies: What Makes Projects Investable?',
     author: 'Sovereign Advisory & Blended Finance Group',

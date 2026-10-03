@@ -170,7 +170,8 @@ export const SystemDetailPanel: React.FC<SystemDetailPanelProps> = ({
 
             {/* Metrics & Drivers */}
             <div className="space-y-4">
-              <div className="p-5 rounded-xl bg-slate-900/60 border border-slate-800/80 space-y-3">
+              {system.metrics.length > 0 && (
+                <div className="p-5 rounded-xl bg-slate-900/60 border border-slate-800/80 space-y-3">
                 <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-400">
                   <Activity className="w-4 h-4 text-emerald-400" />
                   Key Metrics
@@ -186,7 +187,8 @@ export const SystemDetailPanel: React.FC<SystemDetailPanelProps> = ({
                     </div>
                   ))}
                 </div>
-              </div>
+                </div>
+              )}
 
               <div className="p-5 rounded-xl bg-slate-900/60 border border-slate-800/80 space-y-2.5">
                 <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-400">
