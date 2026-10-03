@@ -106,7 +106,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    placeholder="e.g. Dr. Helena Vance"
+                    placeholder="Your full name"
                     className="w-full bg-[#050c17] border border-slate-700/80 focus:border-teal-400 rounded-xl px-4 py-2.5 text-sm text-white placeholder:text-slate-600 focus:outline-none"
                   />
                 </div>
@@ -118,7 +118,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="e.g. vance@ministry.gov"
+                    placeholder="name@organization.org"
                     className="w-full bg-[#050c17] border border-slate-700/80 focus:border-teal-400 rounded-xl px-4 py-2.5 text-sm text-white placeholder:text-slate-600 focus:outline-none"
                   />
                 </div>

@@ -12,7 +12,7 @@ export const defaultMovie: Movie = {
   trailerYoutubeId: 'dQw4w9WgXcQ',
   story: 'Spanning 1,200 hectares of living field observatories and high-throughput phenomics facilities, IP3 Agriscience & Research Farm bridges fundamental biological science with field-scale operations. From metagenomic soil microbiome sequencing to autonomous drone canopy diagnostics, explore how empirical research is forging climate-resilient agriculture.',
   quote: 'Sustainable food security is achieved through empirical agronomic rigor, living soil ecology, and relentless field trial validation.',
-  director: 'Dr. Elena Vance & Agronomic Directorate',
+  director: '',
   writers: ['IP3 Soil Biogeochemistry Lab', 'Global Agriscience Consortium'],
   stars: ['Principal Agronomists', 'Soil Microbiologists', 'AgTech Roboticists'],
   awards: 'International Agronomic Research Innovation Award 2025',

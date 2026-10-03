@@ -788,7 +788,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                   >
                     Explore what we do
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" aria-hidden="true">
-                      <path d="M5 12h14M13 6l6 6-6 6" />
+                      <path d="M5 12h14m-6 -6l6 6-6 6" />
                     </svg>
                   </button>
                 </div>
@@ -1108,7 +1108,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
                     >
                       Explore our approach
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" aria-hidden="true">
-                        <path d="M5 12h14M13 6l6 6-6 6" />
+                      <path d="M5 12h14m-6 -6l6 6-6 6" />
                       </svg>
                     </button>
                   </div>
@@ -1200,7 +1200,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
               >
                 Meet IP3 People (Dedicated Page)
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" aria-hidden="true">
-                  <path d="M5 12h14M13 6l6 6-6 6" />
+                  <path d="M5 12h14m-6 -6l6 6-6 6" />
                 </svg>
               </button>
             </div>
@@ -1220,7 +1220,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
             >
               Explore what we do
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" aria-hidden="true">
-                <path d="M5 12h14M13 6l6 6-6 6" />
+                <path d="M5 12h14m-6 -6l6 6-6 6" />
               </svg>
             </button>
             <button
@@ -1229,7 +1229,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({
             >
               Start a conversation
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" aria-hidden="true">
-                <path d="M5 12h14M13 6l6 6-6 6" />
+                <path d="M5 12h14m-6 -6l6 6-6 6" />
               </svg>
             </button>
           </div>

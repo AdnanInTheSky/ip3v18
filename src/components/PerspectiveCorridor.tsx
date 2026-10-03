@@ -72,7 +72,7 @@ const CORRIDOR_ITEMS: CorridorItem[] = [
     image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1000&auto=format&fit=crop',
     description: 'Standardised interoperable digital rails connecting identification, social protection disbursement, and municipal registries.',
     partner: 'Digital Public Infrastructure Taskforce',
-    metrics: '99.98% Verification Reliability',
+    metrics: '',
     location: 'Metropolitan Governance Directorate'
   },
   {
