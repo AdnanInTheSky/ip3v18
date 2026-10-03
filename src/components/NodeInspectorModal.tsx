@@ -84,7 +84,8 @@ export const NodeInspectorModal: React.FC<NodeInspectorModalProps> = ({
             </div>
 
             {/* Key Performance Metrics Bar */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {node.metrics.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {node.metrics.map((m, idx) => (
                 <div
                   key={idx}
@@ -104,7 +105,8 @@ export const NodeInspectorModal: React.FC<NodeInspectorModalProps> = ({
                   </span>
                 </div>
               ))}
-            </div>
+              </div>
+            )}
 
             {/* Core Capabilities */}
             <div className="space-y-3">
@@ -125,7 +127,8 @@ export const NodeInspectorModal: React.FC<NodeInspectorModalProps> = ({
             </div>
 
             {/* Case Study Highlight */}
-            <div className="bg-gradient-to-br from-[#0c1c30] to-[#06101c] border border-teal-500/30 rounded-xl p-5 space-y-2.5">
+            {(node.caseStudyHighlight.title || node.caseStudyHighlight.context || node.caseStudyHighlight.outcome) && (
+              <div className="bg-gradient-to-br from-[#0c1c30] to-[#06101c] border border-teal-500/30 rounded-xl p-5 space-y-2.5">
               <div className="flex items-center gap-2 text-xs font-mono text-teal-300 font-semibold uppercase tracking-wider">
                 <ShieldCheck className="w-4 h-4" />
                 Featured Deployment Highlight
@@ -141,7 +144,8 @@ export const NodeInspectorModal: React.FC<NodeInspectorModalProps> = ({
                 <span className="text-teal-400 font-semibold">Outcome: </span>
                 {node.caseStudyHighlight.outcome}
               </p>
-            </div>
+              </div>
+            )}
 
             {/* Interconnected System Overlaps */}
             <div className="space-y-3 pt-2">

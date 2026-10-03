@@ -18,6 +18,7 @@ export interface FacultyMember {
 }
 
 export const FACULTY_MEMBERS: FacultyMember[] = [
+  // UNVERIFIED – Syful to confirm
   {
     id: 'mohammad-syful-hoque',
     name: 'Mohammad Syful Hoque',
@@ -36,6 +37,7 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     education: ['M.Sc. in Economic Policy & Public Management', 'B.Sc. in Economics & Applied Statistics'],
     selectedThemes: ['Blended Finance Structuring', 'Sovereign Policy Laboratories', 'Institutional Governance Reform'],
   },
+  // UNVERIFIED – Syful to confirm
   {
     id: 'prof-dr-m-a-mannan',
     name: 'Prof. Dr. M A Mannan',
@@ -54,6 +56,7 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     education: ['Ph.D. in Demography & Social Policy', 'M.A. in Development Studies'],
     selectedThemes: ['Social Safety Net Targeting', 'Human Capital Development', 'Public Health Diagnostics'],
   },
+  // UNVERIFIED – Syful to confirm
   {
     id: 'prof-dr-niaz-asadullah',
     name: 'Prof. Dr. Niaz Asadullah',
@@ -72,6 +75,7 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     education: ['D.Phil. in Economics, University of Oxford', 'M.Sc. in Development Economics, Oxford'],
     selectedThemes: ['Gender Parity in STEM & Labour', 'Quality of Foundational Education', 'Poverty Dynamics'],
   },
+  // UNVERIFIED – Syful to confirm
   {
     id: 'barr-zareen-rahman',
     name: 'Barr. Zareen Rahman',
@@ -90,6 +94,7 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     education: ['Bar Vocational Course, Lincoln’s Inn, London', 'LL.B. (Hons), University of London'],
     selectedThemes: ['Infrastructure Concession Design', 'Statutory Harmonization', 'Investor Protection Systems'],
   },
+  // UNVERIFIED – Syful to confirm
   {
     id: 'prof-dr-shafiun-shimul',
     name: 'Prof. Dr. Shafiun Shimul',
@@ -108,6 +113,7 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     education: ['Ph.D. in Health Economics', 'M.S. in Economics'],
     selectedThemes: ['Universal Health Coverage Architecture', 'Pharmaceutical Pricing Policy', 'Fiscal Space for Health'],
   },
+  // UNVERIFIED – Syful to confirm
   {
     id: 'adj-prof-harun-rashid',
     name: 'Adj. Prof. Harun Rashid',
@@ -125,6 +131,7 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     education: ['Master of Public Policy (MPP)', 'B.A. in Political Science & International Relations'],
     selectedThemes: ['Civil Service Modernization', 'Contested Reform Governance', 'Decentralized Administration'],
   },
+  // UNVERIFIED – Syful to confirm
   {
     id: 'dr-md-abu-zafor-sadek',
     name: 'Dr. Md. Abu Zafor Sadek',
@@ -141,74 +148,5 @@ export const FACULTY_MEMBERS: FacultyMember[] = [
     imageUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format&fit=crop',
     education: ['Ph.D. in Pharmaceutical Technology & Industrial Management', 'M.Pharm.'],
     selectedThemes: ['TRIPS Transition for LDCs', 'Active Pharmaceutical Ingredient Parks', 'Biotech Investment'],
-  },
-  {
-    id: 'dr-tahmina-rahman',
-    name: 'Dr. Tahmina Rahman',
-    role: 'Senior Fellow – Environmental Economics & Climate',
-    category: 'climate',
-    categoryLabel: 'Climate & Environmental Policy',
-    affiliation: 'Global South Resilience Initiative · IP3 Climate Lab',
-    initials: 'TR',
-    bio: 'Specialist in climate economics, carbon market feasibility, green taxonomy alignment, and circular industrial water systems.',
-    extendedBio: 'Dr. Tahmina Rahman develops actionable decarbonization roadmaps for industrial manufacturing clusters and municipal utilities. Her work bridges sovereign emissions reporting with cross-border ESG debt syndication.',
-    domain: 'Climate Economics · Carbon Offsets · Circular Industrial Water',
-    strategicContribution: 'Financing decarbonization pathways and regional climate adaptation structures with measurable metrics.',
-    expertise: ['Climate Economics', 'Carbon Pricing', 'Industrial Decarbonization', 'Water Neutrality', 'ESG Verification'],
-    imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop',
-    featured: true,
-    education: ['Ph.D. in Environmental & Resource Economics', 'M.Sc. in Sustainable Development'],
-    selectedThemes: ['Article 6 Carbon Accounting', 'Municipal Climate Resilience', 'Circular Industrial Clusters'],
-  },
-  {
-    id: 'kazi-farhan-ahmed',
-    name: 'Kazi Farhan Ahmed',
-    role: 'Head of Data & Digital Governance',
-    category: 'data',
-    categoryLabel: 'Data, AI & Digital Systems',
-    affiliation: 'IP3 Systems Lab',
-    initials: 'KFA',
-    bio: 'Architect of municipal public finance data pipelines, interoperable health registries, and AI-enabled social protection engines.',
-    extendedBio: 'Kazi Farhan Ahmed leads the engineering and governance of data infrastructure for public institutions. He specializes in algorithmic accountability, interoperable API standards, and privacy-preserving data exchanges for social protection.',
-    domain: 'Digital Governance · Data Ecosystems · Applied AI · Public IT',
-    strategicContribution: 'Architecting sovereign data platforms that replace bureaucratic latency with automated transparency.',
-    expertise: ['Public Sector IT Architecture', 'Applied AI in Governance', 'Data Interoperability', 'Automated Ledgers'],
-    imageUrl: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop',
-    education: ['M.Sc. in Computer Science & Distributed Systems', 'B.Sc. in Software Engineering'],
-    selectedThemes: ['Municipal Finance Data Pipelines', 'Sovereign Cloud Strategy', 'Algorithmic Fairness in Welfare'],
-  },
-  {
-    id: 'shirin-akhter-chowdhury',
-    name: 'Shirin Akhter Chowdhury',
-    role: 'Lead Specialist – Educational Innovation',
-    category: 'education',
-    categoryLabel: 'Education & Human Capital',
-    affiliation: 'IP3 Human Capital Practice',
-    initials: 'SAC',
-    bio: 'Dedicated to scaling adaptive digital learning systems, teacher professional development cohorts, and early-grade literacy metrics.',
-    extendedBio: 'Shirin Akhter Chowdhury has led longitudinal pedagogical studies across hundreds of schools in marginalized regions, proving that data-informed micro-interventions dramatically accelerate literacy and numeracy competencies.',
-    domain: 'Pedagogical Systems Design · EdTech Impact · Curriculum Reform',
-    strategicContribution: 'Empowering frontline educators with adaptive diagnostic assessment tools and continuous coaching models.',
-    expertise: ['Curriculum Modernization', 'Teacher Training Frameworks', 'EdTech Field Validation', 'MERLA in Education'],
-    imageUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop',
-    education: ['M.Ed. in International Education Policy', 'B.A. in Educational Pedagogy'],
-    selectedThemes: ['Foundational Numeracy Diagnostics', 'Blended Classroom Integration', 'Inclusive Education Systems'],
-  },
-  {
-    id: 'barrister-ashique-rahman',
-    name: 'Barrister Ashique Rahman',
-    role: 'Senior Legal & Policy Counsel',
-    category: 'law',
-    categoryLabel: 'Law, Regulation & Governance',
-    affiliation: 'IP3 Regulatory Architecture & Governance Practice',
-    initials: 'AR',
-    bio: 'Senior counsel advising on state administrative law, public procurement de-risking, legislative drafting, and statutory sandboxes.',
-    extendedBio: 'Barrister Ashique Rahman specializes in bridging legal mandates with digital workflows. He has drafted enabling legislation and operational decrees for statutory digital registries and clean energy concession projects.',
-    domain: 'Administrative Law · Sovereign Procurement · Regulatory Sandboxes',
-    strategicContribution: 'De-risking sovereign regulatory frameworks so innovations can scale without procedural gridlock.',
-    expertise: ['Public Procurement Law', 'Regulatory Drafting', 'Administrative Compliance', 'Sovereign Contracts'],
-    imageUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop',
-    education: ['Bar-at-Law, The Honourable Society of Lincoln’s Inn', 'LL.M. in International Commercial Law'],
-    selectedThemes: ['Regulatory Sandbox Frameworks', 'Public Concession Audits', 'Legislative Modernization'],
   },
 ];

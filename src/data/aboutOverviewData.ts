@@ -242,38 +242,12 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
 export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: 'team-1',
+    // UNVERIFIED – Syful to confirm
     name: 'Mohammad Syful Hoque',
     role: 'Managing Director & Lead Policy Architect',
     affiliation: 'IP3 Consulting',
     bio: 'Pioneering translational policy frameworks, green finance structures, and systems governance across Bangladesh and emerging economies.',
     expertise: ['Public Policy Innovation', 'Green Finance', 'ESG Strategy', 'MERLA'],
     imageUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=500&auto=format&fit=crop',
-  },
-  {
-    id: 'team-2',
-    name: 'Dr. Tahmina Rahman',
-    role: 'Senior Fellow – Environmental Economics',
-    affiliation: 'Global South Resilience Initiative',
-    bio: 'Specialist in climate economics, carbon market feasibility, and circular industrial water management models.',
-    expertise: ['Climate Economics', 'Carbon Offsets', 'Environmental Impact Assessment'],
-    imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=500&auto=format&fit=crop',
-  },
-  {
-    id: 'team-3',
-    name: 'Kazi Farhan Ahmed',
-    role: 'Head of Data & Digital Governance',
-    affiliation: 'IP3 Systems Lab',
-    bio: 'Architect of municipal public finance data pipelines, interoperable health registries, and AI-enabled social registries.',
-    expertise: ['Digital Governance', 'Data Ecosystems', 'Applied AI', 'Public Sector IT'],
-    imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=500&auto=format&fit=crop',
-  },
-  {
-    id: 'team-4',
-    name: 'Shirin Akhter Chowdhury',
-    role: 'Lead Specialist – Educational Innovation',
-    affiliation: 'IP3 Human Capital Practice',
-    bio: 'Dedicated to scaling adaptive learning systems, teacher professional development cohorts, and early-grade literacy metrics.',
-    expertise: ['Pedagogical Design', 'EdTech Impact', 'Curriculum Reform', 'Monitoring'],
-    imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=500&auto=format&fit=crop',
   },
 ];

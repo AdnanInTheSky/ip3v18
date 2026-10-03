@@ -115,33 +115,5 @@ export const availableTimeSlots = [
   "04:30 PM"
 ];
 
-export const clientTestimonials: TestimonialItem[] = [
-  {
-    id: "t1",
-    quote: "The empirical precision of IP3 Farm's multi-season drought trials enabled our breeding consortium to fast-track climate-resilient wheat varieties by three full seasons.",
-    author: "Dr. Marianne Weber",
-    role: "Lead Crop Geneticist",
-    organization: "Global Cereal Improvement Initiative",
-    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400",
-    rating: 5
-  },
-  {
-    id: "t2",
-    quote: "Their subterranean sensor grid and metagenomic soil profiling gave us the verified scientific baseline required for our carbon mineralization accreditation.",
-    author: "Arthur Pendelton",
-    role: "Director of Natural Capital",
-    organization: "AgroCarbon Research Network",
-    avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400",
-    rating: 5
-  },
-  {
-    id: "t3",
-    quote: "Operating on 1,200 real-world hectares gave our autonomous field robotics the exact edge-case validation we needed prior to commercial release.",
-    author: "Dr. Kenshiro Tanaka",
-    role: "Chief Robotics Engineer",
-    organization: "TerraRobotics Systems",
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
-    rating: 5
-  }
-];
+export const clientTestimonials: TestimonialItem[] = [];
 
