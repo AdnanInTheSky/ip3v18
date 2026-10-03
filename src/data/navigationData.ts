@@ -154,14 +154,14 @@ export interface NavbarConfig {
 export const defaultNavbarConfig: NavbarConfig = {
   brand: {
     badgeText: 'IP3',
-    name: 'IP3 AGRISCIENCE',
-    tagline: 'Precision Research Farm',
+    name: 'IP3 CONSULTING LIMITED',
+    tagline: 'Policy Analysis & Advisory',
     showStatusDot: false,
     logoImage: '/images/ip3-logo.svg',
   },
   cta: {
     enabled: true,
-    label: 'Field Trials & Contact',
+    label: 'Contact IP3',
     targetId: '#contact-advisory',
   },
   topBar: {
@@ -169,11 +169,11 @@ export const defaultNavbarConfig: NavbarConfig = {
     showEmail: true,
     showPhone: true,
     showLocation: true,
-    statusLabel: 'Research Farm Operations Active',
+    statusLabel: 'Policy Analysis & Advisory',
   },
   searchEnabled: true,
-  searchPlaceholder: 'Search field trials, soil science & research data...',
-  megaMenuBadge: 'IP3 AGRISCIENCE',
+  searchPlaceholder: 'Search IP3',
+  megaMenuBadge: 'IP3 CONSULTING',
   skipLinkLabel: 'Skip to main content',
 };
 

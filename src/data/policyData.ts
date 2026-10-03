@@ -60,7 +60,7 @@ export interface ProjectItem {
 }
 
 // ==========================================
-// 2. DATA CONSTANTS - RESEARCH FARM
+// 2. DATA CONSTANTS - POLICY AND PRACTICE
 // ==========================================
 
 export const FOCUS_AREAS: FocusArea[] = [];

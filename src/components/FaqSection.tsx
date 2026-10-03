@@ -5,7 +5,7 @@ import { ChevronDown, HelpCircle, MessageSquare } from 'lucide-react';
 export const FaqSection: React.FC = () => {
   const { data } = useCMS();
   const faqItems = data.faqItems;
-  const [openId, setOpenId] = useState<string | null>(faqItems[0].id);
+  const [openId, setOpenId] = useState<string | null>(faqItems[0]?.id ?? null);
 
   const toggleFaq = (id: string) => {
     setOpenId(openId === id ? null : id);

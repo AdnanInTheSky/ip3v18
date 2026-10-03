@@ -168,7 +168,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({
                 {navbar.brand.logoImage ? (
                   <img
                     src={navbar.brand.logoImage}
-                    alt={navbar.brand.name || 'IP3 Agriscience'}
+                    alt={navbar.brand.name || 'IP3 Consulting Limited'}
                     className="h-8 sm:h-9 w-auto max-w-[210px] object-contain object-left"
                   />
                 ) : (

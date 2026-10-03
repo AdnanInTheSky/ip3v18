@@ -87,7 +87,7 @@ const THEME_PRESETS = [
     swatch: ['#ff7e67', '#2dd4bf', '#050a12'],
   },
   {
-    name: 'Emerald Precision Agriscience',
+    name: 'Emerald Policy Advisory',
     primary: '#10b981',
     accent: '#34d399',
     tag: '#10b981',
@@ -651,7 +651,7 @@ export const ThemeTypographyStudio: React.FC<ThemeTypographyStudioProps> = ({
                 lineHeight: 1.25,
               }}
             >
-              Sub-Framework: Precision Agriscience & Institutional Resilience
+              Sub-Framework: Policy Analysis & Institutional Resilience
             </h2>
 
             {/* Rendered Body Text */}
@@ -663,7 +663,7 @@ export const ThemeTypographyStudio: React.FC<ThemeTypographyStudioProps> = ({
                 lineHeight: 1.6,
               }}
             >
-              When overlapping biological, climate, and institutional supply systems are properly modeled, friction ceases to be merely a threat. It transforms into direct material for architectural engineering and sustainable food sovereignty.
+              When overlapping climate and institutional systems are properly modeled, friction ceases to be merely a threat. It transforms into material for practical policy design.
             </p>
 
             {/* Interactive action button */}

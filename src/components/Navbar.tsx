@@ -226,7 +226,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 {navbar.brand.logoImage ? (
                   <img
                     src={navbar.brand.logoImage}
-                    alt={navbar.brand.name || 'IP3 Agriscience'}
+                    alt={navbar.brand.name || 'IP3 Consulting Limited'}
                     className="h-full w-auto max-h-full object-contain object-left block transition-transform duration-200 group-hover:scale-[1.01]"
                   />
                 ) : (

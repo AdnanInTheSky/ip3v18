@@ -4,299 +4,69 @@
     "slides": [
       {
         "id": 1,
-        "name": "farm-genomics",
-        "title": "Precision Agronomy & Living Field Laboratories",
-        "subtitle": "Operating 1,200 contiguous hectares of living agricultural observatories, high-throughput phenotyping testbeds, and climate-resilient cultivar trials.",
+        "name": "ip3-policy-advisory",
+        "title": "IP3 Consulting Limited",
+        "subtitle": "Policy analysis, action research and management consulting.",
         "bgImage": "",
         "videoUrl": "",
-        "ctaText": "Explore Field Stations"
-      },
-      {
-        "id": 2,
-        "name": "soil-microbiome",
-        "title": "Subterranean Soil Metagenomics & Carbon Flux",
-        "subtitle": "Quantifying long-term carbon mineralization, active microbial biome health, and biochar matrix integration across multi-decade test plots.",
-        "bgImage": "",
-        "videoUrl": "",
-        "ctaText": "View Soil Research"
-      },
-      {
-        "id": 3,
-        "name": "agtech-robotics",
-        "title": "Autonomous AgTech & Sensor-Grid Telemetry",
-        "subtitle": "Deploying sub-surface IoT moisture arrays, multispectral drone diagnostics, and automated robotic micro-irrigation for yield optimization.",
-        "bgImage": "",
-        "videoUrl": "",
-        "ctaText": "Discover AgTech Lab"
-      },
-      {
-        "id": 4,
-        "name": "phenomics-greenhouse",
-        "title": "Controlled-Environment Phenomics Glasshouses",
-        "subtitle": "Accelerating non-GMO crop development and drought-resilient seed breeding in hyper-monitored computational research greenhouses.",
-        "bgImage": "",
-        "videoUrl": "",
-        "ctaText": "Greenhouse Trials"
-      },
-      {
-        "id": 5,
-        "name": "bio-circular",
-        "title": "Regenerative Ecology & Bio-Circular Nutrients",
-        "subtitle": "Pioneering closed-loop nitrogen and phosphorus recovery, indigenous pollinator bio-corridors, and zero-leaching watershed management.",
-        "bgImage": "",
-        "videoUrl": "",
-        "ctaText": "Ecosystem Studies"
-      },
-      {
-        "id": 6,
-        "name": "field-trials",
-        "title": "Institutional Trials & Agronomic Advisory",
-        "subtitle": "Collaborating with multilateral research bodies, universities, and growers to translate verified field trial data into scalable agricultural impact.",
-        "bgImage": "",
-        "videoUrl": "",
-        "ctaText": "Partner With Farm"
-      },
-      {
-        "id": 7,
-        "name": "data-station",
-        "title": "Open Agronomic Data & Station Access",
-        "subtitle": "Access live microclimate telemetry, open-source crop growth models, and schedule high-level delegation visits to our research station.",
-        "bgImage": "",
-        "videoUrl": "",
-        "ctaText": "Request Station Visit"
+        "ctaText": "Contact IP3"
       }
     ],
     "movie": {
-      "id": "ip3-agriscience-documentary",
-      "title": "Empirical Agriscience: The Living Soil & Crop Observatory",
-      "subtitle": "A Scientific Documentary on Precision Phenomics, Soil Carbon Sequestration, and Regenerative Agro-Ecology",
-      "imdbRating": "9.9",
-      "releaseYear": "2026",
-      "runtime": "1h 28m",
-      "genres": [
-        "Agricultural Science",
-        "Soil Genomics",
-        "Precision AgTech",
-        "Ecology"
-      ],
-      "backdropUrl": "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=2000&auto=format&fit=crop",
-      "trailerYoutubeId": "dQw4w9WgXcQ",
-      "story": "Spanning 1,200 hectares of living field observatories and high-throughput phenomics facilities, IP3 Agriscience & Research Farm bridges fundamental biological science with field-scale operations. From metagenomic soil microbiome sequencing to autonomous drone canopy diagnostics, explore how empirical research is forging climate-resilient agriculture.",
-      "quote": "Sustainable food security is achieved through empirical agronomic rigor, living soil ecology, and relentless field trial validation.",
+      "id": "",
+      "title": "",
+      "subtitle": "",
+      "imdbRating": "",
+      "releaseYear": "",
+      "runtime": "",
+      "genres": [],
+      "backdropUrl": "",
+      "trailerYoutubeId": "",
+      "videoUrl": "",
+      "story": "",
+      "quote": "",
       "director": "",
-      "writers": [
-        "IP3 Soil Biogeochemistry Lab",
-        "Global Agriscience Consortium"
-      ],
-      "stars": [
-        "Principal Agronomists",
-        "Soil Microbiologists",
-        "AgTech Roboticists"
-      ],
-      "awards": "International Agronomic Research Innovation Award 2025",
-      "rating": "G",
-      "stills": [
-        {
-          "url": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=1000&auto=format&fit=crop",
-          "caption": "Sub-surface Soil Metagenomics & Organic Carbon Core Extraction"
-        },
-        {
-          "url": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=1000&auto=format&fit=crop",
-          "caption": "Controlled-Environment Phenomics & Crop Genetic Profiling"
-        },
-        {
-          "url": "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?q=80&w=1000&auto=format&fit=crop",
-          "caption": "Autonomous Ag-Drone Multispectral Sensor Telemetry in Field Plots"
-        }
-      ]
+      "writers": [],
+      "stars": [],
+      "awards": "",
+      "rating": "",
+      "stills": []
     },
     "officeInfo": {
-      "companyName": "IP3 Agriscience & Research Farm",
-      "tagline": "Living Field Laboratories & Precision Agronomic Science",
-      "description": "IP3 Research Farm operates 1,200 hectares of living agro-ecological testbeds, computational phenomics glasshouses, and advanced soil metagenomics laboratories for sustainable crop science.",
-      "email": "field.trials@ip3-farm.org",
-      "phone": "+1 (541) 737-8920",
-      "alternatePhone": "+1 (541) 737-8925",
+      "companyName": "IP3 Consulting Limited",
+      "tagline": "Policy analysis, action research and management consulting.",
+      "description": "",
+      "email": "",
+      "phone": "",
+      "alternatePhone": "",
       "address": {
-        "building": "Agronomic Innovation Station",
-        "road": "4200 Valley Research Parkway",
-        "area": "Willamette Agriscience Basin",
-        "city": "Corvallis, OR 97331",
-        "country": "United States",
-        "fullAddress": "Agronomic Innovation Station, 4200 Valley Research Parkway, Corvallis, OR 97331, United States"
+        "building": "",
+        "road": "",
+        "area": "",
+        "city": "",
+        "country": "",
+        "fullAddress": ""
       },
-      "googleMapsUrl": "https://maps.google.com/?q=Corvallis+Oregon+Agricultural+Research",
-      "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91624.123!2d-123.3!3d44.56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCorvallis!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus",
-      "officeHours": "Mon - Fri: 7:30 AM - 5:30 PM (PST)",
-      "timeZone": "America/Los_Angeles (PST)"
+      "googleMapsUrl": "",
+      "googleMapsEmbedUrl": "",
+      "officeHours": "",
+      "timeZone": ""
     },
-    "services": [
-      {
-        "id": "field-trials-design",
-        "title": "Field Trial Protocol Design & Execution",
-        "description": "Multi-plot randomized complete block designs (RCBD), climate-stress testing, cultivar evaluation, and harvest yield auditing.",
-        "iconName": "Leaf",
-        "estimatedDuration": "45 mins"
-      },
-      {
-        "id": "soil-carbon-profiling",
-        "title": "Soil Metagenomics & Carbon Accreditation",
-        "description": "Deep soil core sampling, microbial community DNA extraction, biochar mineral stability, and verified carbon credit baselines.",
-        "iconName": "ShieldCheck",
-        "estimatedDuration": "60 mins"
-      },
-      {
-        "id": "agtech-telemetry",
-        "title": "AgTech Sensor & Drone Telemetry Integration",
-        "description": "Sub-surface IoT sensor calibration, multispectral NDVI drone mapping, and predictive microclimate water modeling.",
-        "iconName": "TrendingUp",
-        "estimatedDuration": "60 mins"
-      },
-      {
-        "id": "regenerative-transition",
-        "title": "Regenerative Farm Transition & Advisory",
-        "description": "Cover-crop sequencing, biological pest suppression strategies, closed-loop fertility budgets, and organic transition plans.",
-        "iconName": "Sparkles",
-        "estimatedDuration": "45 mins"
-      }
-    ],
-    "trustStats": [
-      {
-        "label": "Continuous Field Trials",
-        "value": "1,200 Ha",
-        "description": "Contiguous living research acreage",
-        "iconName": "Briefcase"
-      },
-      {
-        "label": "Data Telemetry Turnaround",
-        "value": "< 1 hr",
-        "description": "Real-time automated field sensor sync",
-        "iconName": "Clock"
-      },
-      {
-        "label": "Trial Repeatability",
-        "value": "99.8%",
-        "description": "Empirically audited field datasets",
-        "iconName": "Award"
-      },
-      {
-        "label": "Resident Agronomists",
-        "value": "35+",
-        "description": "Ph.D. soil scientists & agronomists",
-        "iconName": "Users"
-      }
-    ],
-    "faqItems": [
-      {
-        "id": "faq-1",
-        "question": "Can external academic institutions or agtech companies run trials at the IP3 Research Farm?",
-        "answer": "Yes. We host cooperative field research agreements across cereal breeding, biological inputs, autonomous machinery testing, and soil health monitoring. Our agronomy team handles plot staking, daily telemetry, randomized sampling, and statistical reporting.",
-        "category": "Field Research"
-      },
-      {
-        "id": "faq-2",
-        "question": "Where is the research farm located and are in-person site visits permitted?",
-        "answer": "Our main 1,200-hectare research station is located at 4200 Valley Research Parkway, Corvallis, Oregon. We host structured station tours, field demonstration days, and delegation briefings throughout the spring and harvest seasons.",
-        "category": "Station Visits"
-      },
-      {
-        "id": "faq-3",
-        "question": "How do you ensure scientific traceability in long-term carbon and soil health studies?",
-        "answer": "All research quadrants are georeferenced with RTK GPS (±2 cm accuracy) and monitored through permanent subsurface sensor nodes, gas flux chambers, and annual deep core metagenomic DNA sequencing.",
-        "category": "Data Integrity"
-      },
-      {
-        "id": "faq-4",
-        "question": "How do I schedule a technical advisory consultation or trial proposal review?",
-        "answer": "You can book directly via our online consultation scheduler or reach out via our executive field inquiry portal. Our agronomy directors review technical proposals within 24 business hours.",
-        "category": "Advisory"
-      }
-    ],
+    "services": [],
+    "trustStats": [],
+    "faqItems": [],
     "executive": {
-      "name": "Dr. Julian Sterling, Ph.D.",
-      "title": "Director of Agronomic Science & Soil Biogeochemistry",
-      "organization": "IP3 Agriscience & Precision Research Farm",
-      "shortOrg": "IP3 Research Farm",
-      "email": "agronomy.director@ip3-farm.org",
-      "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800",
-      "headline": "Living Soil Systems & Empirical Crop Science in Practice",
-      "paragraphs": [
-        "Dr. Julian Sterling brings over 20 years of field-scale agronomic leadership, specialized in soil metagenomics, high-throughput phenomics, and sustainable agricultural intensification. Overseeing 1,200 hectares of active research testbeds, his research bridges subterranean microbial dynamics with canopy yield optimization.",
-        "He has directed over 60 multi-season agricultural research trials in partnership with the CGIAR, FAO, Horizon Europe, and international agriscience institutes, pioneering zero-runoff nutrient management and drought-tolerant seed cultivars.",
-        "His mission is to empower farmers, agronomists, and policymakers with unvarnished, empirical field trial data to secure resilient, regenerative food systems for the next century."
-      ],
-      "closingStatement": "Bridging fundamental plant biochemistry with 1,200 hectares of living field trial validation."
+      "name": "",
+      "title": "",
+      "organization": "IP3 Consulting Limited",
+      "shortOrg": "IP3 Consulting",
+      "email": "",
+      "image": "",
+      "headline": "",
+      "paragraphs": [],
+      "closingStatement": ""
     },
-    "impactPillars": [
-      {
-        "id": "precision-agronomy",
-        "title": "Precision Agronomy & Crop Genomics",
-        "tagline": "Empirical breeding trials and high-throughput phenotyping for climate resilience.",
-        "description": "We evaluate multi-line cereal, legume, and oilseed cultivars across diverse soil ecotypes, optimizing water-use efficiency and drought resistance through quantitative phenomics.",
-        "iconName": "Leaf",
-        "keyMetrics": [
-          "1,200 Hectares of Trials",
-          "Multi-Season Cereal Varieties",
-          "Zero-Waste Biomass"
-        ],
-        "targetAudience": [
-          "Seed Breeders",
-          "Agricultural Ministries",
-          "Commercial Farm Collectives"
-        ]
-      },
-      {
-        "id": "soil-carbon",
-        "title": "Soil Metagenomics & Deep Carbon Sequestration",
-        "tagline": "Unlocking the subterranean biome to accelerate soil organic matter formation.",
-        "description": "Deploying in-situ CO2 and methane gas flux chambers, mycorrhizal fungal inoculants, and deep soil core metagenomics to verify durable carbon drawdown.",
-        "iconName": "ShieldCheck",
-        "keyMetrics": [
-          "Long-Term Carbon Monitoring",
-          "Microbiome Biodiversity Index",
-          "Sub-Surface Sensor Grids"
-        ],
-        "targetAudience": [
-          "Carbon Project Developers",
-          "Soil Scientists",
-          "Environmental Authorities"
-        ]
-      },
-      {
-        "id": "agtech-robotics",
-        "title": "Autonomous AgTech & Telemetry Networks",
-        "tagline": "Integrating autonomous drone imaging, microclimate IoT, and robotic scouting.",
-        "description": "Eliminating guesswork through centimeter-accurate RTK field mapping, automated variable-rate micro-irrigation, and AI pest diagnostics across test quadrants.",
-        "iconName": "TrendingUp",
-        "keyMetrics": [
-          "4K Multispectral Drone Surveys",
-          "Sub-Minute Telemetry Alerts",
-          "Precision Variable-Rate Delivery"
-        ],
-        "targetAudience": [
-          "AgTech Innovators",
-          "Equipment Manufacturers",
-          "Precision Agronomists"
-        ]
-      },
-      {
-        "id": "bio-circular-ecology",
-        "title": "Bio-Circular Agro-Ecosystems & Watershed Care",
-        "tagline": "Restoring natural pollinator bio-corridors and closed-loop nutrient cycles.",
-        "description": "Engineering buffer hedgerows, anaerobic digestate recovery systems, and biochar filtration swales to eliminate synthetic runoffs and enhance biodiversity.",
-        "iconName": "Sparkles",
-        "keyMetrics": [
-          "100% On-Farm Nutrient Cycling",
-          "Zero-Leaching Riparian Buffers",
-          "Native Pollinator Habitats"
-        ],
-        "targetAudience": [
-          "Ecological Foundations",
-          "Watershed Management Boards",
-          "Regenerative Farm Networks"
-        ]
-      }
-    ],
+    "impactPillars": [],
     "teamMembers": [],
     "facultyMembers": [
       {
@@ -1981,14 +1751,14 @@
     "navbar": {
       "brand": {
         "badgeText": "IP3",
-        "name": "IP3 AGRISCIENCE",
-        "tagline": "Precision Research Farm",
+        "name": "IP3 CONSULTING LIMITED",
+        "tagline": "Policy Analysis & Advisory",
         "showStatusDot": false,
         "logoImage": "/images/ip3-logo.svg"
       },
       "cta": {
         "enabled": true,
-        "label": "Field Trials & Contact",
+        "label": "Contact IP3",
         "targetId": "#contact-advisory"
       },
       "topBar": {
@@ -1996,11 +1766,11 @@
         "showEmail": true,
         "showPhone": true,
         "showLocation": true,
-        "statusLabel": "Research Farm Operations Active"
+        "statusLabel": "Policy Analysis & Advisory"
       },
       "searchEnabled": true,
-      "searchPlaceholder": "Search field trials, soil science & research data...",
-      "megaMenuBadge": "IP3 AGRISCIENCE",
+      "searchPlaceholder": "Search IP3",
+      "megaMenuBadge": "IP3 CONSULTING",
       "skipLinkLabel": "Skip to main content"
     },
     "timeSlots": [
@@ -2013,6 +1783,7 @@
     ],
     "clientTestimonials": []
   },
-  "version": 1,
-  "updatedAt": "2026-09-30T10:24:03.720Z"
+  "version": 64,
+  "updatedBy": "admin@ip3.org",
+  "updatedAt": "2026-10-03T15:06:43.550Z"
 }
