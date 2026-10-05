@@ -1,6 +1,6 @@
 # IP3 Platform — MERN (MongoDB · Express · React · Node) on Vercel
 
-A production-ready build of the IP3 Agriscience & Precision Research Farm site:
+A production-ready build of the IP3 Consulting site:
 a public React front end, a password-gated `/admin` CMS console, an Express API,
 MongoDB Atlas for persistence, and Cloudinary as the media CDN.
 

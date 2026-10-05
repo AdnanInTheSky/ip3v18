@@ -602,7 +602,7 @@ export const FontImporter: React.FC<FontImporterProps> = ({
                       style={{ fontFamily: `'${font.name}', sans-serif` }}
                       className="text-base text-slate-200 tracking-tight leading-snug line-clamp-1"
                     >
-                      Agriscience & Strategic Ecosystem Architecture
+                      Policy Analysis & Public Advisory
                     </p>
                     <p
                       style={{ fontFamily: `'${font.name}', sans-serif` }}
