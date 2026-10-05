@@ -152,15 +152,6 @@ export const MAGAZINE_ARTICLES: MagazineArticle[] = [
     date: 'February 2025'
   },
   {
-    id: 'art-3',
-    title: 'Sustainable Agriculture Practices for Food Security',
-    category: 'Climate Action',
-    imageUrl: 'https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=800&q=80',
-    summary: 'Regenerative farming methods, saline-tolerant crop varieties, and smart irrigation mechanisms supporting climate-impacted agrarian communities.',
-    readTime: '7 min read',
-    date: 'February 2025'
-  },
-  {
     id: 'art-4',
     title: 'Biodiversity Conservation and Ecosystem Management',
     category: 'Climate Action',

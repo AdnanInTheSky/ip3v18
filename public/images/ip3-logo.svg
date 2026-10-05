@@ -23,7 +23,7 @@
     <!-- Main Emblem Tile -->
     <rect x="2" y="4" width="40" height="40" rx="11" fill="#081424" stroke="#ff7e67" stroke-width="1.2" stroke-opacity="0.5"/>
 
-    <!-- Precision Geo Agriscience Grid & Seed Network -->
+    <!-- IP3 mark -->
     <path d="M12 24 L22 14 L32 24 L22 34 Z" stroke="#ff7e67" stroke-width="1.2" stroke-dasharray="2 1.5" stroke-opacity="0.4" fill="none"/>
     <path d="M14 24 Q 22 13 30 24 Q 22 35 14 24 Z" fill="url(#leaf-grad)" fill-opacity="0.25" stroke="url(#leaf-grad)" stroke-width="1.2"/>
     <path d="M22 15 L22 33" stroke="#34d399" stroke-width="1.2" stroke-linecap="round"/>
@@ -36,15 +36,15 @@
 
   <!-- Brand Typography Lockup -->
   <g id="logo-text" transform="translate(50, 0)">
-    <!-- Primary Name: IP3 AGRISCIENCE -->
+    <!-- Primary Name: IP3 CONSULTING -->
     <text x="0" y="23" font-family="'Archivo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="900" font-size="16" letter-spacing="0.04em" fill="#f8fafc">
       <tspan fill="#ff7e67">IP3</tspan>
-      <tspan dx="4" fill="#f8fafc">AGRISCIENCE</tspan>
+      <tspan dx="4" fill="#f8fafc">CONSULTING</tspan>
     </text>
 
-    <!-- Subtitle / Tagline: PRECISION RESEARCH FARM -->
+    <!-- Subtitle / Tagline -->
     <text x="0" y="36" font-family="'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace" font-weight="700" font-size="8.5" letter-spacing="0.14em" fill="#94a3b8">
-      PRECISION RESEARCH FARM
+      POLICY ANALYSIS &amp; ADVISORY
     </text>
   </g>
 </svg>

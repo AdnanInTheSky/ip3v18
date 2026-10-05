@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { AnimatePresence } from 'motion/react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useCMS } from '../context/CMSContext';
 import { LoadingScreen } from './LoadingScreen';
 
@@ -10,17 +9,16 @@ import { LoadingScreen } from './LoadingScreen';
 export const ContentGate: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { isLoaded, syncStatus } = useCMS();
   const [isLoaderFinished, setIsLoaderFinished] = useState(false);
+  const handleFinished = useCallback(() => setIsLoaderFinished(true), []);
+
+  useEffect(() => {
+    const timer = window.setTimeout(handleFinished, isLoaded ? 300 : 3000);
+    return () => window.clearTimeout(timer);
+  }, [handleFinished, isLoaded]);
 
   return (
     <>
-      <AnimatePresence>
-        {!isLoaderFinished && (
-          <LoadingScreen
-            isLoaded={isLoaded}
-            onFinished={() => setIsLoaderFinished(true)}
-          />
-        )}
-      </AnimatePresence>
+      {!isLoaderFinished && <LoadingScreen />}
 
       {/* Mount children once backend responds or loader finishes */}
       {(isLoaded || isLoaderFinished) && children}

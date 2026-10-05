@@ -10,6 +10,7 @@ import { Ip3TrailerSection } from './components/Ip3TrailerSection';
 import { SystemsArchitectureSection } from './components/SystemsArchitectureSection';
 import { ExecutiveCard } from './components/ExecutiveCard';
 import { ContactSection } from './components/ContactSection';
+import { PolicyToPracticeSection } from './components/PolicyToPracticeSection';
 import { Footer } from './components/Footer';
 import { LetsTalkModal } from './components/LetsTalkModal';
 import { LetsCollaborateModal } from './components/LetsCollaborateModal';
@@ -212,6 +213,9 @@ function AppContent() {
 
           {/* IP3 Client Advisory, Contact & Consultation Section */}
           <ContactSection />
+
+          {/* New, self-contained story section appended after the existing home content */}
+          <PolicyToPracticeSection onExploreApproach={() => handleNavigate('approach')} />
         </>
       )}
 

@@ -79,6 +79,10 @@ export const ConsultationScheduler: React.FC<ConsultationSchedulerProps> = ({ on
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!selectedService) {
+      setErrorMsg('Consultation services are being updated. Please contact IP3 directly.');
+      return;
+    }
     setErrorMsg(null);
 
     if (!booking.clientName.trim()) {
@@ -214,7 +218,7 @@ END:VCALENDAR`;
               </div>
               <div className="flex justify-between items-center text-slate-400">
                 <span>Practice Focus:</span>
-                <span className="font-bold text-slate-100">{selectedService.title}</span>
+                <span className="font-bold text-slate-100">{selectedService?.title || 'Service details to be confirmed'}</span>
               </div>
               <div className="flex justify-between items-center text-slate-400">
                 <span>Meeting Mode:</span>
@@ -335,7 +339,7 @@ END:VCALENDAR`;
                 ))}
               </select>
               <p className="text-[11px] text-slate-400 mt-1">
-                {selectedService.description}
+                {selectedService?.description || 'Verified advisory services will be listed here.'}
               </p>
             </div>
 
@@ -467,7 +471,7 @@ END:VCALENDAR`;
             <div className="pt-3 border-t border-slate-800 flex justify-end">
               <button
                 type="submit"
-                disabled={isSubmitting}
+                disabled={isSubmitting || !selectedService}
                 className="w-full sm:w-auto px-8 py-3 rounded-xl bg-[#ff7e67] hover:bg-[#ff694f] text-slate-950 font-mono font-bold text-sm shadow-lg shadow-[#ff7e67]/20 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
               >
                 {isSubmitting ? (

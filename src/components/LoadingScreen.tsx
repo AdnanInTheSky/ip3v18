@@ -1,38 +1,9 @@
-import React, { useEffect } from 'react';
-import { motion } from 'motion/react';
+import React from 'react';
 
-interface LoadingScreenProps {
-  isLoaded: boolean;
-  onFinished: () => void;
-}
-
-export const LoadingScreen: React.FC<LoadingScreenProps> = ({
-  isLoaded,
-  onFinished,
-}) => {
-  // When loaded, trigger smooth completion with slight delay
-  useEffect(() => {
-    if (isLoaded) {
-      const exitTimer = setTimeout(() => {
-        onFinished();
-      }, 300);
-      return () => clearTimeout(exitTimer);
-    }
-  }, [isLoaded, onFinished]);
-
-  // Safety fallback: allow exit after 3 seconds if network stalled
-  useEffect(() => {
-    const safetyTimer = setTimeout(() => {
-      onFinished();
-    }, 3000);
-    return () => clearTimeout(safetyTimer);
-  }, [onFinished]);
-
+export const LoadingScreen: React.FC = () => {
   return (
-    <motion.div
+    <div
       id="ip3-loading-screen"
-      initial={{ opacity: 1 }}
-      exit={{ opacity: 0, transition: { duration: 0.35, ease: 'easeInOut' } }}
       className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-[#050a12] text-slate-100 select-none"
     >
       <div className="flex flex-col items-center gap-5">
@@ -61,7 +32,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({
           </p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
